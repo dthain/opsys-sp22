@@ -29,9 +29,9 @@ title: CSE 30341 - Operating Systems Principles
 <table>
 <tr> <th> Week <th> Reading Due Monday <th> Tuesday <th> Thursday <th> Due Friday </tr>
 <tr> <td> 10 Jan	<td> Ch. 1-2	<td> Overview / <a href=syllabus.md>Syllabus</a> <td>	Hardware / <a href=powers.md>Powers</a> <td> </tr>
-<tr> <td> 17 Jan	<td> Ch. 3-6	<td> Processes	<td> Processes / C Review	<td> Project 1 Due </tr>
+<tr> <td> 17 Jan	<td> Ch. 3-6	<td> Processes	<td> Processes / C Review	<td> <a href=project1>Project 1 Due</a> </tr>
 <tr> <td> 24 Jan	<td> Ch. 7-11	<td> Scheduling	<td> Scheduling	<td> </tr>
-<tr> <td> 31 Jan	<td> Ch. 25-29	<td> Threads	<td> Locks and Data Structures <td> Project 2 Due <td> </tr>
+<tr> <td> 31 Jan	<td> Ch. 25-29	<td> Threads	<td> Locks and Data Structures <td> Project 2 Due </tr>
 <tr> <td> 7 Feb	<td> Ch. 30	   <td> Condition Variables <td> TBA <td> </tr>
 <tr> <td> 14 Feb	<td> Ch. 31-34	<td> Semaphores	<td> Deadlock	<td> Project 3 Due </tr>
 <tr> <td> 21 Feb	<td> Ch. 13-16	<td> Memory Overview	<td> Segmentation	<td> Homework Due </tr>
