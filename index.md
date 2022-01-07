@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CSE 30341 - Operating Systems Principles
+classes: wide
 ---
 
 # CSE 30341 - Operating Systems Principles - Spring 2022
