@@ -47,7 +47,7 @@ A computer memory is conceptually organized as an array of words, such that each
 
 **Answer:** It can address up to 64KB.
 
-** Example 2: ** Suppose that you are designing an architecture for a computer that requires 256MB of memory. How many address bits are needed to address the whole memory?
+**Example 2:** Suppose that you are designing an architecture for a computer that requires 256MB of memory. How many address bits are needed to address the whole memory?
 
 ```
 256MB = 256 * 2^20 B = 2^8 * 2^20 B = 2^28 B
