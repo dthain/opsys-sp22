@@ -40,7 +40,7 @@ title: CSE 30341 - Operating Systems Principles
 | 28 Mar	| Ch. 35-37	| HDD/SDD | RAID	| Project 5 Due
 | 4 Apr 	| Ch. 38-39	| RAID	| File Systems	|
 | 11 Apr	| Ch. 40-42	| FS Implementation	| FS Implementation |
-| 18 Apr	| Security?	| Security | Security | Project 6 Due
+| 18 Apr	| Ch. 53-55	| Security | Security | Project 6 Due
 | 2 May		| 		| Final Exam 10:30 |
 
 
