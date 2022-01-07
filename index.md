@@ -1,10 +1,7 @@
 ---
 layout: default
 title: CSE 30341 - Operating Systems Principles
-classes: wide
 ---
-
-# CSE 30341 - Operating Systems Principles - Spring 2022
 
 # Instructors and Office Hours
 
@@ -44,7 +41,7 @@ classes: wide
 <tr> <td> 4 Apr  <td> Ch. 38-39	<td> RAID	<td> File Systems	<td>
 <tr> <td> 11 Apr <td> Ch. 40-42	<td> FS Implementation	<td> FS Implementation <td>
 <tr> <td> 18 Apr	<td> Security?  <td> Security <td> Security <td> Project 6 Due
-<tr> <td> 2 May <td> Final Exam at 10:30AM </tr>
+<tr> <td> 2 May <td> Final Exam at 10:30AM
 </table>
 
 
