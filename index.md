@@ -24,24 +24,24 @@ title: CSE 30341 - Operating Systems Principles
 
 # Tentative Schedule
 
-<table>
-<tr> <th> Week <th> Reading Due Monday <th> Tuesday <th> Thursday <th> Due Friday
-<tr> <td> 10 Jan	<td> Ch. 1-2	<td> Overview / <a href=syllabus.md>Syllabus</a> <td>	Hardware / <a href=powers.md>Powers</a> <td>
-<tr> <td> 17 Jan	<td> Ch. 3-6	<td> Processes	<td> Processes / C Review	<td> <a href=project1>Project 1 Due</a>
-<tr> <td> 24 Jan	<td> Ch. 7-11	<td> Scheduling	<td> Scheduling	<td> </tr>
-<tr> <td> 31 Jan	<td> Ch. 25-29	<td> Threads	<td> Locks and Data Structures <td> Project 2 Due
-<tr> <td> 7 Feb	<td> Ch. 30	   <td> Condition Variables <td> TBA <td>
-<tr> <td> 14 Feb	<td> Ch. 31-34	<td> Semaphores	<td> Deadlock	<td> Project 3 Due
-<tr> <td> 21 Feb	<td> Ch. 13-16	<td> Memory Overview	<td> Segmentation	<td> Homework Due
-<tr> <td> 28 Feb	<td> Ch. 17-18	<td> Midterm Exam	<td> Paging Mechanisms <td>
-<tr> <td> 7 Mar  <td colspan=4> (Spring Break)
-<tr> <td> 14 Mar	<td> Ch. 19-20	<td> TLBs / Performance	<td> Multi-Level Paging	<td> Project 4 Due
-<tr> <td> 21 Mar	<td> Ch. 21-23	<td> Swapping	<td> I/O Devices <td>
-<tr> <td> 28 Mar	<td> Ch. 35-37	<td> HDD/SDD <td> RAID	<td> Project 5 Due
-<tr> <td> 4 Apr  <td> Ch. 38-39	<td> RAID	<td> File Systems	<td>
-<tr> <td> 11 Apr <td> Ch. 40-42	<td> FS Implementation	<td> FS Implementation <td>
-<tr> <td> 18 Apr	<td> Security?  <td> Security <td> Security <td> Project 6 Due
-<tr> <td> 2 May <td> Final Exam at 10:30AM
-</table>
+|Week|Reading Due Mon|Tuesday|Thursday|Due Friday|
+|-----|-----|-----|---|---|
+| 10 Jan	|         | Overview / [Syllabus](syllabus.md) | Hardware / [Powers](powers.md) | Notes on Ch 1-2
+| 17 Jan	| Ch. 3-6	| Processes	| Processes / C Review	| [Project 1 Due](project1)
+| 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	|
+| 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures | Project 2 Due
+| 7 Feb		| Ch. 30	   | Condition Variables | TBA |
+| 14 Feb	| Ch. 31-34	| Semaphores	| Deadlock	| Project 3 Due
+| 21 Feb	| Ch. 13-16	| Memory Overview	| Segmentation	| Homework Due
+| 28 Feb	| Ch. 17-18	| **Midterm Exam**	| Paging Mechanisms |
+| 7 Mar		| 		| - | - |
+| 14 Mar	| Ch. 19-20	| TLBs / Performance	| Multi-Level Paging	| Project 4 Due
+| 21 Mar	| Ch. 21-23	| Swapping	| I/O Devices |
+| 28 Mar	| Ch. 35-37	| HDD/SDD | RAID	| Project 5 Due
+| 4 Apr 	| Ch. 38-39	| RAID	| File Systems	|
+| 11 Apr	| Ch. 40-42	| FS Implementation	| FS Implementation |
+| 18 Apr	| Security?	| Security | Security | Project 6 Due
+| 2 May		| 		| Final Exam 10:30 |
+
 
 
