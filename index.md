@@ -38,12 +38,12 @@ title: CSE 30341 - Operating Systems Principles
 <tr> <td> 28 Feb	<td> Ch. 17-18	<td> Midterm Exam	<td> Paging Mechanisms <td> </tr>
 <tr> <td> 7 Mar  <td colspan=4> (Spring Break) </tr>
 <tr> <td> 14 Mar	<td> Ch. 19-20	<td> TLBs / Performance	<td> Multi-Level Paging	<td> Project 4 Due </tr>
-<tr> <td> 21 Mar	<td> Ch. 21-23	<td> Swapping	<td> <td> </tr>
-<tr> <td> 28 Mar	<td> Ch. 35-37	<td> I/O Devices <td> HDD/SDD	<td> </tr>
-<tr> <td> 4 Apr  <td> Ch. 38-39	<td> RAID	<td> File Systems	<td> Project 5 Code Due </tr>
+<tr> <td> 21 Mar	<td> Ch. 21-23	<td> Swapping	<td> I/O Devices <td> </tr>
+<tr> <td> 28 Mar	<td> Ch. 35-37	<td> HDD/SDD <td> RAID	<td> Project 5 Due </tr>
+<tr> <td> 4 Apr  <td> Ch. 38-39	<td> RAID	<td> File Systems	<td> </tr>
 <tr> <td> 11 Apr <td> Ch. 40-42	<td> FS Implementation	<td> FS Implementation <td> </tr>
-<tr> <td> 18 Apr	<td> Security?  <td> Security <td> Security <td> </tr>
-<tr> <td> TBA <td> Final Exam </tr>
+<tr> <td> 18 Apr	<td> Security?  <td> Security <td> Security <td> Project 6 Due </tr>
+<tr> <td> 2 May <td> Final Exam at 10:30AM </tr>
 </table>
 
 
