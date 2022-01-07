@@ -28,10 +28,10 @@ title: CSE 30341 - Operating Systems Principles
 |-----|-----|-----|---|---|
 | 10 Jan	|         | Overview / [Syllabus](syllabus.md) | Hardware / [Powers](powers.md) | Notes on Ch 1-2
 | 17 Jan	| Ch. 3-6	| Processes	| Processes / C Review	| [Project 1 Due](project1)
-| 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	|
-| 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures | Project 2 Due
-| 7 Feb		| Ch. 30	   | Condition Variables | TBA |
-| 14 Feb	| Ch. 31-34	| Semaphores	| Deadlock	| Project 3 Due
+| 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	| Project 2 Due
+| 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures |
+| 7 Feb		| Ch. 30	   | Condition Variables | CV Contd | Project 3 Due
+| 14 Feb	| Ch. 31-34	| Semaphores	| Deadlock	|
 | 21 Feb	| Ch. 13-16	| Memory Overview	| Segmentation	| Homework Due
 | 28 Feb	| Ch. 17-18	| **Midterm Exam**	| Paging Mechanisms |
 | 7 Mar		| 		| - | - |
