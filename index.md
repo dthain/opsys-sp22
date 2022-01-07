@@ -16,9 +16,9 @@ classes: wide
 
 - [Syllabus](syllabus.md)
 - [General Instructions for Assignments](general.md)
-- Recorded Lectures (Panopto)
-- Discussion Page (Panopto)
-- Gradebook (Canvas)
+- [Recorded Lectures (Panopto)](https://canvas.nd.edu/courses/33829/external_tools/76)
+- [Discussion Page (Panopto)](https://canvas.nd.edu/courses/33829/discussion_topics)
+- [Gradebook (Canvas)](https://canvas.nd.edu/courses/33829/gradebook)
 
 # Online Textbook
 
