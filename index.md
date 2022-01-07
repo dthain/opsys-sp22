@@ -3,6 +3,8 @@ layout: default
 title: CSE 30341 - Operating Systems Principles
 ---
 
+# CSE 30341 - Operating Systems Principles - Spring 2022
+
 # Instructors and Office Hours
 
 - Prof. Douglas Thain (dthain@nd.edu)
@@ -25,8 +27,8 @@ title: CSE 30341 - Operating Systems Principles
 # Tentative Schedule
 
 <table>
-<tr> <th> Week <th> Reading <th> Monday <th> Tuesday <th> Thursday <th> Due Friday </tr>
-<tr> <td> 10 Jan	<td> Ch. 1-2	<td> Overview / [Syllabus](syllabus.md) <td>	Hardware / (Powers)[powers.md] </tr>
+<tr> <th> Week <th> Reading Due Monday <th> Tuesday <th> Thursday <th> Due Friday </tr>
+<tr> <td> 10 Jan	<td> Ch. 1-2	<td> Overview / <a href=syllabus.md>Syllabus</a> <td>	Hardware / <a href=powers.md>Powers</a> </tr>
 <tr> <td> 17 Jan	<td> Ch. 3-6	<td> Processes	<td> Processes / C Review	<td> Project 1 Due </tr>
 <tr> <td> 24 Jan	<td> Ch. 7-11	<td> Scheduling	<td> Scheduling	</tr>
 <tr> <td> 31 Jan	<td> Ch. 25-29	<td> Threads	<td> Locks and Data Structures <td> Project 2 Due </tr>
