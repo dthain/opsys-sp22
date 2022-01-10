@@ -3,7 +3,7 @@ layout: default
 title: CSE 30341 - Operating Systems Principles
 ---
 
-# Instructors and Office Hours
+# CSE 30341 - Operating Systems Principles
 
 - Prof. Douglas Thain (dthain@nd.edu)
 - TA: Barry Sly-Delgado (bslydelg@nd.edu)
@@ -13,9 +13,8 @@ title: CSE 30341 - Operating Systems Principles
 
 - [Syllabus](syllabus.md)
 - [General Instructions for Assignments](general.md)
-- [Recorded Lectures (Panopto)](https://canvas.nd.edu/courses/33829/external_tools/76)
-- [Discussion Page (Panopto)](https://canvas.nd.edu/courses/33829/discussion_topics)
-- [Gradebook (Canvas)](https://canvas.nd.edu/courses/33829/gradebook)
+- [Recorded Lectures and Gradebook (Panopto)](https://canvas.nd.edu/courses/33829)
+- [Office Hours Zoom](https://notredame.zoom.us/j/98135137451)
 
 # Online Textbook
 
@@ -24,7 +23,7 @@ title: CSE 30341 - Operating Systems Principles
 
 # Tentative Schedule
 
-|Week|Reading Due Mon|Tuesday|Thursday|Due Friday|
+|Week|Reading&nbsp;Due&nbsp;Mon&nbsp;11:59PM |Tuesday|Thursday|Due Friday 5PM|
 |-----|-----|-----|---|---|
 | 10 Jan	|         | Overview / [Syllabus](syllabus.md) | Hardware / [Powers](powers.md) | Notes on Ch 1-2
 | 17 Jan	| Ch. 3-6	| Processes	| Processes / C Review	| [Project 1 Due](project1)
