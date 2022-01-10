@@ -24,7 +24,7 @@ title: CSE 30341 - Operating Systems Principles
 
 ## Some Open Source OS Kernels
 
-<img align=right src=http://github.com/dthain/basekernel/screenshot.png>
+<img align=right height=128 src=http://github.com/dthain/basekernel/screenshot.png>
 
 - [Basekernel](http://github.com/dthain/basekernel) (by Prof. Thain)
 - [Minix](https://www.minix3.org)
