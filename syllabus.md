@@ -27,14 +27,16 @@ The course materials will test each student's achievement of these goals at seve
 ## Course Communications
 
 The course web page contains the schedule, assignments, and other critical information:
-http://dthain.github.io/opsys-sp22
+
+[http://dthain.github.io/opsys-sp22](http://dthain.github.io/opsys-sp22)
 
 Canvas will be used for distributing grades and class recordings:
-https://canvas.nd.edu/courses/33829
+
+[https://canvas.nd.edu/courses/33829](https://canvas.nd.edu/courses/33829)
 
 ## Textbooks
 
-- Required: Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, **Operating Systems in Three Easy Pieces**, Arpaci-Dusseau Books, 2019. (http://ostep.org)
+- Required: Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, **Operating Systems in Three Easy Pieces**, Arpaci-Dusseau Books, 2019. [http://ostep.org](http://ostep.org)
 
 - Suggested Reference: Kernighan and Ritchie, The C Programming Language, Prentice-Hall, 1988.
 
