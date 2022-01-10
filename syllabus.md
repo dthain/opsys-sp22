@@ -73,6 +73,16 @@ If you believe an error has been made in grading an item, please bring it to the
 Late assignments are not generally accepted.  However, each student may use **one late pass** for one assignment during the semester.  To exercise this option,
 please email the instructor prior to the deadline.  The late pass will give you an extension of one week on the assignment.  (Cannot be used for the final assignment.)
 
+## Campus Health and Safety
+
+At the time of writing, classes are to be conducted in person normally, with masking precautions.
+Of course, we may need to adjust if the campus situation changes.
+
+If you have a mild illness (or are required to quarantine as a precaution) then you should make
+use of the classroom recordings and continue to complete assignments in the ordinary way.
+Office hours will be available by Zoom if needed.  If you have a more serious illness, then
+please contact the instructor when you are able, and we will make alternate arrangements.
+
 ## Academic Code of Honor
 
 As a student at Notre Dame, you are bound by the Academic Code of Honor (http://honorcode.nd.edu), which states:
