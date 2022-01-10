@@ -12,6 +12,7 @@ title: CSE 30341 - Operating Systems Principles
 # Quick Links
 
 - [Syllabus](syllabus.md)
+- [Submit Reading Notes](https://forms.gle/8h6bW9kKnyDjPvtr7)
 - [General Instructions for Assignments](general.md)
 - [Recorded Lectures and Gradebook (Panopto)](https://canvas.nd.edu/courses/33829)
 - [Office Hours Zoom](https://notredame.zoom.us/j/98135137451)
@@ -25,8 +26,8 @@ title: CSE 30341 - Operating Systems Principles
 
 |Week|Reading&nbsp;Due Mon&nbsp;11:59PM |Tuesday|Thursday|Due Friday 5PM|
 |-----|-----|-----|---|---|
-| 10 Jan	|         | Overview / [Syllabus](syllabus.md) | Hardware / [Powers](powers.md) | Notes on Ch 1-2
-| 17 Jan	| Ch. 3-6	| Processes	| Processes / C Review	| [Project 1 Due](project1)
+| 10 Jan	| Ch. 1-2 | Overview / [Syllabus](syllabus.md) | Hardware / [Powers](powers.md)
+| 17 Jan	| Ch. 3-6	| Processes	| Processes | [Project 1 Due](project1)
 | 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	| Project 2 Due
 | 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures |
 | 7 Feb		| Ch. 30	   | Condition Variables | CV Contd | Project 3 Due
