@@ -5,11 +5,9 @@ title: CSE 30341 - Operating Systems Principles
 
 ## CSE 30341 - Operating Systems Principles
 
-<table>
-<tr><td><img src=http://ccl.cse.nd.edu/research/people/dthain.jpg><td>Prof. Douglas Thain (dthain@nd.edu)
-<tr><td><img src=http://ccl.cse.nd.edu/research/people/bslydelg.jpg><td>TA: Barry Sly-Delgado (bslydelg@nd.edu)
-<tr><td><img src=http://ccl.cse.nd.edu/research/people/blyons.jpg><td>TA: Ben Lyons (blyons@nd.edu)
-</table>
+|![](http://ccl.cse.nd.edu/research/people/dthain.jpg)|Prof. Douglas Thain (dthain@nd.edu)|
+|![](http://ccl.cse.nd.edu/research/people/bslydelg.jpg)|TA: Barry Sly-Delgado (bslydelg@nd.edu)|
+|![](http://ccl.cse.nd.edu/research/people/blyons.jpg)|TA: Ben Lyons (blyons@nd.edu)|
 
 ## Quick Links
 
