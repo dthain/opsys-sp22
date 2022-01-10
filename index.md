@@ -3,37 +3,47 @@ layout: default
 title: CSE 30341 - Operating Systems Principles
 ---
 
-# CSE 30341 - Operating Systems Principles
+## CSE 30341 - Operating Systems Principles
 
-- Prof. Douglas Thain (dthain@nd.edu)
-- TA: Barry Sly-Delgado (bslydelg@nd.edu)
-- TA: Ben Lyons (blyons@nd.edu)
+<table>
+<tr><td><img src=http://ccl.cse.nd.edu/research/people/dthain.jpg><td>Prof. Douglas Thain (dthain@nd.edu)
+<tr><td><img src=http://ccl.cse.nd.edu/research/people/bslydelg.jpg><td>TA: Barry Sly-Delgado (bslydelg@nd.edu)
+<tr><td><img src=http://ccl.cse.nd.edu/research/people/blyons.jpg><td>TA: Ben Lyons (blyons@nd.edu)
+</table>
 
-# Quick Links
+## Quick Links
 
-- [Syllabus](syllabus.md)
+- [Syllabus](syllabus)
 - [Submit Reading Notes](https://forms.gle/8h6bW9kKnyDjPvtr7)
-- [General Instructions for Assignments](general.md)
+- [General Instructions for Assignments](general)
 - [Recorded Lectures and Gradebook (Panopto)](https://canvas.nd.edu/courses/33829)
 - [Office Hours Zoom](https://notredame.zoom.us/j/98135137451)
 
-# Online Textbook
+## Online Textbook
 
 - Required: [Operating Systems in Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP), Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, Arpaci-Dusseau Books, March, 2018 (Version 1.00)
 - Suggested: The C Programming Language, Brian Kernighan and Dennis Ritchie, Prentice Hall, 1988.
 
-# Tentative Schedule
+## Some Open Source OS Kernels
+
+- [Basekernel](http://github.com/dthain/basekernel) (by Prof. Thain)
+- [Minix](https://www.minix3.org)
+- [Plan 9 from Bell Labs](https://9p.io/plan9/)
+- [Linux Kernel](https://www.kernel.org)
+- [NetBSD](https://www.netbsd.org)
+
+## Tentative Schedule
 
 |Week|Reading&nbsp;Due Mon&nbsp;11:59PM |Tuesday|Thursday|Due Friday 5PM|
 |-----|-----|-----|---|---|
-| 10 Jan	| Ch. 1-2 | Overview / [Syllabus](syllabus.md) | Hardware / [Powers](powers.md)
+| 10 Jan	| Ch. 1-2 | Overview / [Syllabus](syllabus) | Hardware / [Powers](powers)
 | 17 Jan	| Ch. 3-6	| Processes	| Processes | [Project 1 Due](project1)
-| 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	| Project 2 Due
+| 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	| [Project 2 Due](project2)
 | 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures |
 | 7 Feb		| Ch. 30	   | Condition Variables | CV Contd | Project 3 Due
 | 14 Feb	| Ch. 31-34	| Semaphores	| Deadlock	|
 | 21 Feb	| Ch. 13-16	| Memory Overview	| Segmentation	| Homework Due
-| 28 Feb	| Ch. 17-18	| **Midterm Exam**	| Paging Mechanisms |
+| 28 Feb	| Ch. 17-18	| Paging Mechanisms | **Midterm Exam**	|
 | 7 Mar		| - | Spring Break | Spring Break |
 | 14 Mar	| Ch. 19-20	| TLBs / Performance	| Multi-Level Paging	| Project 4 Due
 | 21 Mar	| Ch. 21-23	| Swapping	| I/O Devices |
@@ -42,6 +52,5 @@ title: CSE 30341 - Operating Systems Principles
 | 11 Apr	| Ch. 40-42	| File Systems	| File Systems |
 | 18 Apr	| Ch. 53-55	| Security | Security | Project 6 Due
 | 2 May		| -	| Final Exam 10:30 |
-
 
 

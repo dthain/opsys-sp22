@@ -1,7 +1,7 @@
 
 # Project 1: System Calls and Error Checking
 
-First, read the [general instructions](general.md) for assignments. Make sure you are using the correct compiler on the correct machine.
+First, read the [general instructions](general) for assignments. Make sure you are using the correct compiler on the correct machine.
 
 This project is a warm up assignment for the course. The basic concept is very simple: to write a program that copies files and directories from one place to another. However, the main challenge of engineering operating systems is dealing with errors and unexpected conditions. Thus, the main focus of this assignment will be on the correct handling of errors. The goals of this project are:
 
@@ -214,7 +214,7 @@ Your grade will be based on:
 
 ## Turning In
 
-This assignment is due on Friday, January 24th at 5:00PM.
+This assignment is due on Friday, January 21st at 5:00PM.
 
 Please turn in only the source code files filecopy.c and treecopy.c and a Makefile that builds both executables. Do not submit executables or other files, since we will build your code from source.
 
