@@ -40,25 +40,23 @@ https://canvas.nd.edu/courses/33829
 
 ## Reading Assignments
 
-The textbook provides the foundation of the course, and it will be important for you to thoroughly absorb it thoroughly.  To encourage regular
-reading and preparation from class, you will turn in summary notes on the assigned readings each Monday, no later than 11:59PM.  (A form will be provided on the course web page.) If you like to take notes on paper, then just attach a photo or two of your notebook pages. If you type them out, then attach a PDF instead.
+The textbook provides the foundation of the course, and it will be important for you to absorb it thoroughly.  To encourage regular
+reading and preparation for class, you will turn in summary notes on the assigned readings each Monday by 11:59PM.  (A form will be provided on the course web page.)  The easiest way to do this is just take notes on paper, and then snap a few photos for upload.  If you prefer to type them out, then attach a PDF instead.
 
 Your notes can be organized in whatever way is appropriate to that chapter and is useful for you. Good things to include may be an outline of the chapter, definition of key terms, a sketch of the systems or data structures being discussed, that sort of thing.  Along with your notes, you should submit **one thoughtful question** you would like to discuss that week. I will try to answer a few highlighted questions each week, and steer the lecture to address them.
 
-Grading on notes will be very simple: either one, one-half, or zero points. There will be twelve opportunities to earn a total of ten points, so you may miss up to two without penalty.
+Grading on notes will be very simple: either one, one-half, or zero points. There will be fourteen opportunities to earn a total of twelve points, so you may miss up to two without penalty.  The first round of notes are due on **Thursday, January 13th**, and then every **Monday at 11:59PM** thereafter.
 
 ## Attendance and Classroom Recording
 
 To succeed in this class, you should attend and actively participate in all the scheduled lectures, however, attendance is not taken.
-You will get the most out of class if you have done the required readings in advance.  During class, I typically work by diagramming key structures
-of the OS on the chalkboard, and then work through examples and take questions.
+You will get the most out of class if you have done the required readings in advance and actively take notes during class.
+I typically work by diagramming key structures of the OS on the chalkboard, and then work through examples and take questions.
 
-Please refrain from using your laptops for non-class activities.  Let's use this time to work together.
+Please refrain from using your laptops for non-class activities, since this [tends to distract others](https://www.insidehighered.com/news/2018/07/27/class-cellphone-and-laptop-use-lowers-exam-scores-new-study-shows) as well as yourself.  Let's use this time to work together instead.
 
 Each class meeting will be recorded using Panopto and made available on Canvas.  Recordings are intended as a **back-up option** so that you
-can catch up if you are out sick, travelling for an interview, or just need a review.  However, watching the videos is not a good substitute for regular attendance.
-
-Recordings typically only capture the front of the classroom and the instructor's voice,
+can catch up if you are out sick, travelling for an interview, or just need a review.  However, watching the videos is not a good substitute for regular attendance.  Recordings typically only capture the front of the classroom and the instructor's voice,
 but may also incidentally record students during class, or shortly before and after class.
 If you have any concerns about what has been recorded, please see the instructor.
 
@@ -66,7 +64,7 @@ If you have any concerns about what has been recorded, please see the instructor
 
 ## Grading
 
-The course grade will be based on six programming projects, one homework, a midterm, and a final exam. For each assignment, a numeric grade will be assigned. Grades will be made available in Canvas. Projects and homeworks are 60% of the course grade, chapter notes are 10%, and the midtem and final exam are each 15%. At the end of the semester, number grades will be converted to letter grades: 90/80/70 are the usual cutoffs for A/B/C grades, respectively. The instructor will exercise discretion on borderline grades, or to account for a trend of increasing/decreasing grades throughout the semester.
+The course grade will be based on six programming projects, one homework, a midterm, and a final exam. For each assignment, a numeric grade will be assigned. Grades will be made available in Canvas. Projects and homeworks are 60% of the course grade, chapter notes are 10%, and the midterm and final exam are each 15%. At the end of the semester, number grades will be converted to letter grades: 90/80/70 are the usual cutoffs for A/B/C grades, respectively. The instructor will exercise discretion on borderline grades, or to account for a trend of increasing/decreasing grades throughout the semester.
 
 If you believe an error has been made in grading an item, please bring it to the attention of the TA who graded it within seven days of receiving it. (The TA who graded it knows the details best, and so can give you the best explanation.) Factual and clerical errors will of course be cheerfully corrected. If you are unsatisfied with the TA's explanation, you may appeal to the instructor. After seven days, graded items are final and will not be revisited.
 
