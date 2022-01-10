@@ -5,11 +5,9 @@ title: CSE 30341 - Operating Systems Principles
 
 ## CSE 30341 - Operating Systems Principles
 
-|-----|-----|
-|![](http://ccl.cse.nd.edu/research/people/dthain.jpg)|Prof. Douglas Thain (dthain@nd.edu)|
-|![](http://ccl.cse.nd.edu/research/people/bslydelg.jpg)|TA: Barry Sly-Delgado (bslydelg@nd.edu)|
-|![](http://ccl.cse.nd.edu/research/people/blyons.jpg)|TA: Ben Lyons (blyons@nd.edu)|
-|-----|-----|
+- Prof. Douglas Thain (dthain@nd.edu)
+- TA: Barry Sly-Delgado (bslydelg@nd.edu)
+- TA: Ben Lyons (blyons@nd.edu)
 
 ## Quick Links
 
@@ -25,6 +23,8 @@ title: CSE 30341 - Operating Systems Principles
 - Suggested: The C Programming Language, Brian Kernighan and Dennis Ritchie, Prentice Hall, 1988.
 
 ## Some Open Source OS Kernels
+
+<img align=right src=http://github.com/dthain/basekernel/screenshot.png>
 
 - [Basekernel](http://github.com/dthain/basekernel) (by Prof. Thain)
 - [Minix](https://www.minix3.org)
