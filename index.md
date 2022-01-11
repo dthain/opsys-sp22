@@ -10,6 +10,14 @@ title: CSE 30341 - Operating Systems Principles
 - TA: Barry Sly-Delgado (bslydelg@nd.edu)
 - TA: Ben Lyons (blyons@nd.edu)
 
+## Office Hours (Starting Jan 17th)
+
+|   | Place | Mon | Tue | Wed | Thu | Fri |
+|---|---|-----|-----|-----|-----|-----|
+|1-3PM | 384C Fitz | Prof. Thain | | | Prof. Thain | |
+|3-5PM | 150B Fitz |  | Ben | | | Ben |
+|5-7PM | 150B Fitz | | | Barry | Barry | |
+
 ## Quick Links
 
 - [Syllabus](syllabus)
