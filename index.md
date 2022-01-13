@@ -14,8 +14,8 @@ title: CSE 30341 - Operating Systems Principles
 
 |   | Place | Mon | Tue | Wed | Thu | Fri |
 |---|---|-----|-----|-----|-----|-----|
-|1-3PM | 384C Fitz | Prof. Thain | | | Prof. Thain | |
-|3-5PM | 150B Fitz |  | Ben | | | Ben |
+|1-3PM | 384C Fitz | Prof. Thain | | | Prof. Thain | Ben |
+|3-5PM | 150B Fitz |  | Ben | | | |
 |5-7PM | 150B Fitz | | | Barry | Barry | |
 
 ## Quick Links
