@@ -12,11 +12,14 @@ title: CSE 30341 - Operating Systems Principles
 
 ## Office Hours (Starting Jan 17th)
 
-|   | Place | Mon | Tue | Wed | Thu | Fri |
-|---|---|-----|-----|-----|-----|-----|
-|1-3PM | 384C Fitz | Prof. Thain | | | Prof. Thain | Ben |
-|3-5PM | 150B Fitz |  | Ben | | | |
-|5-7PM | 150B Fitz | | | Barry | Barry | |
+|   | Mon | Tue | Wed | Thu | Fri |
+|---|-----|-----|-----|-----|-----|
+|1-3PM | Prof. Thain (\*) |     |       | Prof. Thain (\*) | Ben (+) |
+|3-5PM |             | Ben (+) |       |             |     |
+|5-7PM |             |     | Barry (+) | Barry (+)       |     |
+
+- (\*) in 384C Fitzpatrick
+- (+) in 150B Fitzpatrick (CSE student commons)
 
 ## Quick Links
 
