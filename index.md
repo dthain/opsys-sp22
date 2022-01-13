@@ -8,7 +8,7 @@ title: CSE 30341 - Operating Systems Principles
 - 136 Debartolo Hall, Spring 2022
 - Prof. Douglas Thain (dthain@nd.edu)
 - TA: Barry Sly-Delgado (bslydelg@nd.edu)
-- TA: Ben Lyons (blyons@nd.edu)
+- TA: Ben Lyons (blyons1@nd.edu)
 
 ## Office Hours (Starting Jan 17th)
 
