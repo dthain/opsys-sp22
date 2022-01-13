@@ -56,7 +56,7 @@ title: CSE 30341 - Operating Systems Principles
 | 7 Mar		| - | Spring Break | Spring Break |
 | 14 Mar	| Ch. 19-20	| TLBs / Performance	| Multi-Level Paging	| Project 4 Due
 | 21 Mar	| Ch. 21-23	| Swapping	| I/O Devices |
-| 28 Mar	| Ch. 35-37	| HDD/SDD | RAID	| Project 5 Due
+| 28 Mar	| Ch. 35-37 + 44	| HDD/SDD | RAID	| Project 5 Due
 | 4 Apr 	| Ch. 38-39	| File Systems	| File Systems
 | 11 Apr	| Ch. 40-42	| File Systems	| File Systems |
 | 18 Apr	| Ch. 53-55	| Security | Security | Project 6 Due
