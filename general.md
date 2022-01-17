@@ -36,8 +36,57 @@ if(!file) {
 Make good use of the tools you learned in prior classes:
 
 - valgrind helps to find some pointer and malloc errors in C programs. (Unfortunately, it has a tendency to slow down multi-threaded prorgams dramatically.)
+- strace shows the system calls your program performs.
 - gdb allows you to step through a program and display variables.
-- strace shows the system calls your program performs. 
+
+ 
+### Valgrind
+Valgrind is a tool for detecting memory management errors in C. This is useful because these types of bugs can be very difficult to detect, since they may not even affect the output of the program. Common memory bugs include leaks, using uninitialized values, incorrect frees, and accessing illegal parts of memory. If your code passes all valgrind related checks, then you can feel confident that there isn’t a hidden memory error lurking in your code. You can test your code with valgrind via the following:
+
+`valgrind –leak-check=full ./executable`
+
+For more information regarding valgrind errors check out the following resources:
+
+http://cs.ecs.baylor.edu/~donahoo/tools/valgrind/messages.html
+
+https://valgrind.org/
+
+### Strace
+The ‘strace’ program displays all system calls and signals made by the executable. This allows you to map out the execution of your program which is useful for debugging. You can use strace like this:
+
+`strace ./executable`
+
+Resources:
+
+https://linux.die.net/man/1/strace
+
+https://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html
+
+### GDB
+GDB is a debugging tool that allows you to step through your code line by line, view variable values, and set breakpoints in the program. If your program isn’t working properly and you don’t understand why, this is the best tool to use. To start using gdb to debug your program, first make sure that you add the `-g`flag when you compile the executable
+
+`gcc -g test.c -o executable`
+
+Then to start gdb run
+
+`gdb ./executable`
+
+At this point, you can set breakpoints in the code by specifying a file and a line number
+
+`b test.c:15`
+
+You can start running the program with `run`. Once it reaches the breakpoint, the execution stops. You can now step through your code one line at a time by typing `step`. If you want to view the value of a variable `x`, type
+
+`print x`
+
+Finally, if you want to view the series of function calls that led to this point in the code, you can type `bt`. To quit gdb, type `quit`.
+
+Resources:
+
+https://cs.baylor.edu/~donahoo/tools/gdb/tutorial.html
+
+https://www.geeksforgeeks.org/gdb-step-by-step-introduction/
+
 
 ## Use good coding style and common sense.
 
