@@ -95,6 +95,17 @@ Mon Jan 19 11:51:57 EST 2009
 myshell: process 348 exited normally with status 0
 ```
 
+The `kill` should kill a process by taking the pid of a specific child process. 
+
+```
+myshell> kill 346
+myshell: process 346 has been killed
+
+myshell> waitfor 346
+myshell: unable to kill process 346
+```
+
+
 After each command completes, your program must continue to print a prompt and accept another line of input. The shell should exit with status zero if the command is `quit` or `exit` or the input reaches end-of-file. If the user types a blank line, simply print another prompt and accept a new line of input. If the user types any other command, the shell should print a reasonable error message:
 
 ```
