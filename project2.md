@@ -95,7 +95,7 @@ Mon Jan 19 11:51:57 EST 2009
 myshell: process 348 exited normally with status 0
 ```
 
-The `kill` should kill a process by taking the pid of a specific child process. 
+The `kill` command should kill a process by taking the pid of a specific child process. 
 
 ```
 myshell> kill 346
