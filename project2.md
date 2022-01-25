@@ -101,7 +101,7 @@ The `kill` command should kill a process by taking the pid of a specific child p
 myshell> kill 346
 myshell: process 346 has been killed
 
-myshell> waitfor 346
+myshell> kill 346
 myshell: unable to kill process 346
 ```
 
