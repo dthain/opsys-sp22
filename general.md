@@ -3,7 +3,7 @@
 
 ## Build and test your code on the student machines.
 
-Make sure that your program builds and runs correctly on the CSE student servers (student00.cse.nd.edu through student08.cse.nd.edu) which run the RHEL7 operating system. (Note that student04.cse.nd.edu should not be used for this class, since it's setup for another class.) The TAs will only test your program on those machines, and that's where your grade will be determined.
+Make sure that your program builds and runs correctly on the CSE student servers (student00.cse.nd.edu through student08 and student10-13) which run the RHEL7 operating system. (Note that student04.cse.nd.edu should not be used for this class, since it's setup for another class.) The TAs will only test your program on those machines, and that's where your grade will be determined.
 
 Of course, many of you want to build and test on your laptops, and that's something you should know how to do. However, our experience is that no two Linux (or Mac) machines are identical in any way: compilers, libraries, and other irrelevant things differ in subtle ways that will complicate the writing and running of your program. Code that compiles on your laptop may not compile at all on the student machines, or vice versa. If you do develop on your laptop, then leave extra time to test and debug your program when copied to the student machines.
 
