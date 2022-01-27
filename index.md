@@ -25,7 +25,7 @@ title: CSE 30341 - Operating Systems Principles
 ## Quick Links
 
 - [Syllabus](syllabus)
-- [Submit Reading Notes on Canas](https://canvas.nd.edu/courses/33829/assignments)
+- [Submit Reading Notes on Canvas](https://canvas.nd.edu/courses/33829/assignments)
 - [General Instructions for Assignments](general)
 - [Recorded Lectures on Panopto](https://canvas.nd.edu/courses/33829/external_tools/76)
 - [Gradebook on Canvas](https://canvas.nd.edu/courses/33829/gradebook)
