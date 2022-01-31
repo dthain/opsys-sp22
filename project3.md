@@ -19,9 +19,9 @@ The set is interesting both mathematically and aesthetically because it has an i
 You can zoom into any part and find swirls, spirals, snowflakes, and other fun structures, as long as you are willing to do enough computation. 
 For example, here are three images starting from the entire set and zooming in: 
 
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smallbase.jpg)
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smallspike.jpg)
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smallspikezoom.jpg)
+![](assets/images/smallbase.jpg)
+![](assets/images/smallspike.jpg)
+![](assets/images/smallspikezoom.jpg)
 
 Here is the [source code](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/source) for a simple program that generates images of the Mandelbrot set and displays them in a graphics window.
 Just download all of the files, run `make` to build the code and then `./fractal` to display.
@@ -48,9 +48,9 @@ Then, the pixel is assigned a color according to the number of iterations comple
 An easy color scheme is to assign a gray value proportional to the number of iterations, but others are possible.
 Here are a few color variations of the same configuration:
 
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smallcolor1.jpg)
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smallcolor2.jpg)
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smallcolor3.jpg)
+![](assets/images/smallcolor1.jpg)
+![](assets/images/smallcolor2.jpg)
+![](assets/images/smallcolor3.jpg)
 
 The `maxiter` value controls the amount of work done by the algorithm. If we increase `maxiter`, then we can see much more detail in the set, but it may take much longer to compute.
 Generally speaking, you need to turn the `maxiter` value higher as you zoom in. For example, here is the same area in the set computed with four different values of `maxiter`:
@@ -59,10 +59,10 @@ Generally speaking, you need to turn the `maxiter` value higher as you zoom in. 
 
 maxiter 50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxiter 100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxiter 500 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxiter 1000
 
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smalliter50.jpg)
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smalliter100.jpg)
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smalliter500.jpg)
-![](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/images/smalliter1000.jpg)
+![](assets/images/smalliter50.jpg)
+![](assets/images/smalliter100.jpg)
+![](assets/images/smalliter500.jpg)
+![](assets/images/smalliter1000.jpg)
 
 ## Parallel Programming
 Now, what does this all have to do with operating systems? It can take a long time to compute a Mandelbrot image. 
@@ -124,7 +124,7 @@ Include a `README` file that briefly describes the keyboard and mouse commands n
 
 This assignment is due at **5:00PM on Friday, February 11th**. 
 Late assignments are not accepted.
-Please review the [general instructions](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/general.html) for assignments.
+Please review the [general instructions](general) for assignments.
 
 ## Grading
 Your grade will be based on:
