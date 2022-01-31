@@ -8,7 +8,7 @@ The goals of this project are:
 Optionally, check out this inspiring background video on fractals: [Nova: Fractals: Hunting the Hidden Dimension](https://www.youtube.com/watch?v=d0Exnv8Ym7s).
 
 ## Graphics Setup
-For this assignment, we will be using the [gfx library](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/gfx/) to build an interactive application. 
+For this assignment, we will be using the [gfx library](https://github.com/dthain/gfx) to build an interactive application. 
 (You may have used something similar in Fundamentals.) 
 Please visit that page, follow the setup instructions, and make sure that you can run the example application before going any farther. 
  
