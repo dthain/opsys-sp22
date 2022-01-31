@@ -89,7 +89,7 @@ For example, if you specify three threads and the image is 600 pixels high, then
 The number of threads should be adjustable at runtime via the keyboard.
 If the user presses any of the keys 1-8, the next image should be computed using that number of threads.
 
-Now, the trick here is that each thread is going to be using the [graphics library](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/gfx/) to set the color and draw a pixel on the screen. 
+Now, the trick here is that each thread is going to be using the [graphics library](https://github.com/dthain/gfx) to set the color and draw a pixel on the screen. 
 Without any protection, the program will simply crash as the threads compete with each other. (In fact, you should try it, and see where it crashes)
 Identify the critical section in the program and protect with a `pthread mutex`.
 
@@ -119,12 +119,16 @@ In the case of a printable letter, it's just the ASCII value of that letter (tre
 Mouse buttons and special keys are represented by unique numbers which you can discover by just printing out the return value of `gfx_wait()`.
 
 ## Turning In
-Turn in all of your source files and a `Makefile` that builds `fractal` and `fractalthread` and `fractaltask`. 
-Include a `README` file that briefly describes the keyboard and mouse commands needed to operate your programs, and anything else you would like us to know.
 
 This assignment is due at **5:00PM on Friday, February 11th**. 
-Late assignments are not accepted.
 Please review the [general instructions](general.md) for assignments.
+
+Turn in all of your source files and a `Makefile` that builds `fractal` and `fractalthread` and `fractaltask`.  Include a `README` file that briefly describes the keyboard and mouse commands needed to operate your programs, and anything else you would like us to know.  As a reminder,
+your dropbox directory is:
+
+```
+/escnfs/courses/sp22-cse-30341.01/dropbox/YOURNAME/project3
+```
 
 ## Grading
 Your grade will be based on:
