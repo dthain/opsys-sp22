@@ -23,7 +23,7 @@ For example, here are three images starting from the entire set and zooming in:
 ![](assets/images/smallspike.jpg)
 ![](assets/images/smallspikezoom.jpg)
 
-Here is the [source code](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/source) for a simple program that generates images of the Mandelbrot set and displays them in a graphics window.
+Here is the [source code](assets/code/project3/) for a simple program that generates images of the Mandelbrot set and displays them in a graphics window.
 Just download all of the files, run `make` to build the code and then `./fractal` to display.
 
 This program uses the *escape time algorithm*. For each pixel in the image, it starts with the x and y position, and then computes a recurrence relation until it exceeds a fixed value or runs for max iterations.
