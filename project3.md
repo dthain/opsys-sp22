@@ -5,7 +5,7 @@ The goals of this project are:
 - To recognize and solve load imbalance prolems.
 - To have a little fun with the Mandelbrot set.
 
-Optionally, check out this inspiring background video on fractals: [Nova: Fractals: Hunting the Hidden Dimension](https://itunes.apple.com/US/tv-season/id319077172?i=319256689).
+Optionally, check out this inspiring background video on fractals: [Nova: Fractals: Hunting the Hidden Dimension](https://www.youtube.com/watch?v=d0Exnv8Ym7s).
 
 ## Graphics Setup
 For this assignment, we will be using the [gfx library](https://www3.nd.edu/~dthain/courses/cse30341/spring2020/project3/gfx/) to build an interactive application. 
