@@ -124,7 +124,7 @@ Include a `README` file that briefly describes the keyboard and mouse commands n
 
 This assignment is due at **5:00PM on Friday, February 11th**. 
 Late assignments are not accepted.
-Please review the [general instructions](general) for assignments.
+Please review the [general instructions](general.md) for assignments.
 
 ## Grading
 Your grade will be based on:
