@@ -1,6 +1,6 @@
 # CSE 30341 - Synchronization Homework
 
-Background
+Synchronization Background
 ----------
 
 As we discussed in class, a monitor is a code-organization strategy for writing safe concurrent programs.
