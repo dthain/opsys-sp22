@@ -1,4 +1,4 @@
-CSE 30341 - Scheduling Homework
+CSE 30341 - Homework A - Scheduling
 -------------------------------
 
 Part A - Scheduling Archetypes
