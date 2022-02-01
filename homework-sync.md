@@ -1,4 +1,4 @@
-# CSE 30341 - Synchronization Homework
+# CSE 30341 - Homework B - Synchronization
 
 Synchronization Background
 ----------
