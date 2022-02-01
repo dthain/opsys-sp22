@@ -55,8 +55,8 @@ title: CSE 30341 - Operating Systems Principles
 | 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	| [Project 2 Due](project2)
 | 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures | [Watch Nova: Fractals](https://www.youtube.com/watch?v=d0Exnv8Ym7s)
 | 7 Feb		| Ch. 30	   | Condition Variables | CV Contd | [Project 3 Due](project3)
-| 14 Feb	| Ch. 31-34	| Semaphores	| Deadlock	|
-| 21 Feb	| Ch. 13-16	| Memory Overview	| Segmentation	| Homework Due
+| 14 Feb	| Ch. 31-34	| Semaphores	| Deadlock	| [Homework A Due](homework-scheduling)
+| 21 Feb	| Ch. 13-16	| Memory Overview	| Segmentation	| [Homework B Due](homework-sync)
 | 28 Feb	| Ch. 17-18	| Paging Mechanisms | **Midterm Exam**	|
 | 7 Mar		| - | Spring Break | Spring Break |
 | 14 Mar	| Ch. 19-20	| TLBs / Performance	| Multi-Level Paging	| Project 4 Due
