@@ -139,51 +139,40 @@ if reader threads continually arrive, preventing the writer thread from obtainin
 Write a slightly more complex solution that prevents starvation but still provides the same level of safety.
 (Use the same code structure as above.)
 
-Santa's Elves Problem
+The Egg Carton Problem
 ---------------------
 
-Santa Claus has a large number of elves building toys.
-Occasionally they run into problems and need advice from Santa.
-However, they don't want to waste Santa's valuable time,
-so they wait until three elves all have a problem,
-and then all three go into Santa's workshop to ask their questions.
-Exactly three elves may enter together, and no more may enter until all three leave.
+Suppose you have several people working together to collect eggs from a chicken coop.
+There is one egg carton that holds twelve eggs.  Each time a person collects a fresh
+egg, they place it in a *random* place in the egg carton.  If the carton is full,
+then that person must wait until the carton is emptied, and then place the egg.
 
-**Question 5** Write a solution to the Santa's Elves problem, starting with the foolproof approach described above.
+A single *collector* comes by periodically, and checks to see if the carton is full.
+If it is, then the collector takes the *whole* carton away and replaces it with an empty one.
+If the carton is not full, the collector does nothing and comes back later.
 
-*Be careful:* This problem is not as easy as it first appears! Consider what happens if there are lots of threads, and many elves want to ask questions at once?
-You can imagine each elf is a thread that looks like this:
+**Question 5** Write a solution to the Egg Carton problem, starting with the foolproof approach described above.
+The carton is represented by an array of twelve integers, each one true if an egg is in that position, false otherwise.
+
+Your solution should look like this:
 
 ```
-void elf()
+int carton[12] = {0,...};
+
+/* Add one egg to the carton randomly, blocking if there is no space */
+
+void add_egg()
 {
-    while(1) {
-        // Work on toys for a while
-        wait_for_three_elves();
-        // Ask Santa a question.
-        done_asking();
-    }
+. . .
+}
+
+/* If the carton is full, replace it with an empty carton, otherwise do nothing. */
+
+void collect_carton()
+{
 }
 ```
 
-Now write some code like this:
-
-```
-pthread_mutex_t mutex;
-pthread_cond_t cond;
-
-// Add global variables here
-
-void wait_for_three_elves()
-{
-...
-}
-
-void done_asking()
-{
-...
-}
-```
 
 Turning In
 ----------
