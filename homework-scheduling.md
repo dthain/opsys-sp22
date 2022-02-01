@@ -3,9 +3,8 @@ CSE 30341 - Homework A - Scheduling
 
 Part A - Scheduling Archetypes
 ----------------------------------
-
 Suppose that you have the following jobs to schedule
-in a single-processor operating system:
+in a single-processor operating system.
 
 |      | Arrival Time | Length |
 |------|----|----|
@@ -18,13 +17,12 @@ in a single-processor operating system:
 
 **Question 1** : For the First Come First Served (FCFS) (non-preemptive) scheduling algorithm, show the following:
 
-Show the following:
 - (a) A timeline showing the order in which each job executes.
 - (b) The response time and turnaround time of each job.
 - (c) The average response time and average turnaround time across all jobs.
 - (d) The utilization of the system over the entire schedule.
 
-For each schedule, assume that each context switch takes one time unit,
+You may assume that each context switch takes one time unit,
 and that ties are broken in favor of the job that arrived earlier.
 
 **Question 2** : Repeat for the Shortest Job First (SJF) (non-preemptive) scheduling algorithm.
