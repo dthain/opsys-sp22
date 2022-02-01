@@ -8,7 +8,7 @@ Suppose that you have the following jobs to schedule
 in a single-processor operating system:
 
 |      | Arrival Time | Length |
---------------------------
+|------|----|----|
 |Job A | 0  | 10 |
 |Job B | 5  | 20 |
 |Job C | 8  | 5  |
