@@ -157,7 +157,7 @@ The carton is represented by an array of twelve integers, each one true if an eg
 Your solution should look like this:
 
 ```
-int carton[12] = {0,...};
+static int carton[12] = {0,...};
 
 /* Add one egg to the carton randomly, blocking if there is no space */
 
@@ -172,7 +172,6 @@ void collect_carton()
 {
 }
 ```
-
 
 Turning In
 ----------
