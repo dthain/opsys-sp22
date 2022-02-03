@@ -120,7 +120,7 @@ Mouse buttons and special keys are represented by unique numbers which you can d
 
 ## Turning In
 
-This assignment is due at **5:00PM on Friday, February 11th**. 
+This assignment is due at **5:00PM on Friday, February 18th**. 
 Please review the [general instructions](general.md) for assignments.
 
 Turn in all of your source files and a `Makefile` that builds `fractal` and `fractalthread` and `fractaltask`.  Include a `README` file that briefly describes the keyboard and mouse commands needed to operate your programs, and anything else you would like us to know.  As a reminder,
