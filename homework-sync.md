@@ -46,7 +46,7 @@ void withdraw( int amount )
 		pthread_cond_wait(&cond,&mutex);
 	}
 	balance -= amount;
-	pthread_mutex_lock(&mutex);
+	pthread_mutex_unlock(&mutex);
 }
 ```
 
