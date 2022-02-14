@@ -103,7 +103,8 @@ Let's fix that problem in the next step.
 Copy your working `fractalthread.c` into a new file `fractaltask.c`.
 
 To solve the load imbalance, we must divide the work up into even smaller units called tasks. 
-Suppose that we define each block of 20x20 pixels of the image as a separate task to be completed.
+Suppose that you divide up the image into small rectanges (say, 20x20 pixels), each one a separate
+task to be completed.
 Declare an array (or 2d array) `tasks[i]` to keep track of which tasks have and have not been started.
 Then, set up each thread such that it runs in a loop, selects the next available task, computes it, and then repeats until all tasks are complete.
 Again, you must be careful because `tasks` is a data structure shared among multiple threads.
