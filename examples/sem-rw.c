@@ -12,8 +12,8 @@ sem_t writelock;
 int   readcount=0;
 int   value = 0;
 
-int nthreads = 4;
-int sleeptime = 1000000; /* microseconds */
+int nthreads = 100;
+int sleeptime = 10000; /* microseconds */
 
 int safe_read()
 {
@@ -60,6 +60,8 @@ int main( int argc, char *argv[] )
 {
   pthread_t tid[nthreads];
   int i;
+
+  srand(time(0));
 
   sem_init(&mutex,0,1);
   sem_init(&writelock,0,1);

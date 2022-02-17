@@ -14,8 +14,8 @@ sem_t full;
 sem_t empty;
 
 int count = 0;
-int nthreads = 4;
-int sleeptime = 1000000; /* microseconds */
+int nthreads = 3;
+int sleeptime = 1000; /* microseconds */
 
 void safe_insert()
 {
@@ -62,6 +62,8 @@ int main( int argc, char *argv[] )
   pthread_t producer_tid[nthreads];
   pthread_t consumer_tid[nthreads];
   int i;
+
+  srand(time(0));
 
   sem_init(&mutex,0,1);
   sem_init(&full,0,0);
