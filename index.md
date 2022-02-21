@@ -54,8 +54,8 @@ title: CSE 30341 - Operating Systems Principles
 | 17 Jan	| Ch. 3-6	| Processes	| Processes | [Project 1 Due](project1)
 | 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	| [Project 2 Due](project2)
 | 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures | [Watch Nova: Fractals](https://www.youtube.com/watch?v=d0Exnv8Ym7s)
-| 7 Feb		| Ch. 30	   | Condition Variables | CV Contd / [Examples](examples) | [Homework A Due](homework-scheduling)
-| 14 Feb	| Ch. 31-34	| Catch Up | Semaphores / [Examples](examples) | [Project 3 Due](project3)
+| 7 Feb		| Ch. 30	   | Condition Variables | CV Contd / [Examples](https://github.com/dthain/opsys-sp22/tree/main/examples) | [Homework A Due](homework-scheduling)
+| 14 Feb	| Ch. 31-34	| Catch Up | Semaphores / [Examples](https://github.com/dthain/opsys-sp22/tree/main/examples) | [Project 3 Due](project3)
 | 21 Feb	| Ch. 13-16	| Deadlock	| Memory Overview	| [Homework B Due](homework-sync)
 | 28 Feb	| --	      | Segmentation | [Midterm Exam](midterm)	|
 | 7 Mar		| - | Spring Break | Spring Break |
