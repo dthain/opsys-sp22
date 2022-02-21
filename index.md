@@ -57,7 +57,7 @@ title: CSE 30341 - Operating Systems Principles
 | 7 Feb		| Ch. 30	   | Condition Variables | CV Contd | [Homework A Due](homework-scheduling)
 | 14 Feb	| Ch. 31-34	| Catch Up | Semaphores / [Examples](https://github.com/dthain/opsys-sp22/tree/main/examples) | [Project 3 Due](project3)
 | 21 Feb	| Ch. 13-16	| Deadlock	| Memory Overview	| [Homework B Due](homework-sync)
-| 28 Feb	| --	      | Segmentation | **Midterm Exam**	|
+| 28 Feb	| --	      | Segmentation | [Midterm Exam](midterm)	|
 | 7 Mar		| - | Spring Break | Spring Break |
 | 14 Mar	| Ch. 17-19	| Paging Mechanisms | TLBs / Performance	| Project 4 Due
 | 21 Mar	| Ch. 20-22	| Multi-Level Paging | Swapping	|
