@@ -15,6 +15,7 @@ The midterm exam will cover this material:
 The exam will be about 4-5 pages and will be taken in class on March 3rd.
 You should be prepared to do the following sorts of things:
 
+- Define essential terms.
 - Sketch and describe overall structure of an operating system.
 - Sketch and describe the hardware capabilities that underly an operating system.
 - Explain the implementation of processes and system calls.
