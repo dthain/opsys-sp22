@@ -55,15 +55,15 @@ title: CSE 30341 - Operating Systems Principles
 | 24 Jan	| Ch. 7-11	| Scheduling	| Scheduling	| [Project 2 Due](project2)
 | 31 Jan	| Ch. 25-29	| Threads	| Locks and Data Structures | [Watch Nova: Fractals](https://www.youtube.com/watch?v=d0Exnv8Ym7s)
 | 7 Feb		| Ch. 30	   | Condition Variables | CV Contd | [Homework A Due](homework-scheduling)
-| 14 Feb	| Ch. 31-34	| Semaphores / [Examples](https://github.com/dthain/opsys-sp22/tree/main/examples) | Deadlock	| [Project 3 Due](project3)
-| 21 Feb	| Ch. 13-16	| Memory Overview	| Segmentation	| [Homework B Due](homework-sync)
-| 28 Feb	| Ch. 17-18	| Paging Mechanisms | **Midterm Exam**	|
+| 14 Feb	| Ch. 31-34	| Catch Up | Semaphores / [Examples](https://github.com/dthain/opsys-sp22/tree/main/examples) | [Project 3 Due](project3)
+| 21 Feb	| Ch. 13-16	| Deadlock	| Memory Overview	| [Homework B Due](homework-sync)
+| 28 Feb	| --	      | Segmentation | **Midterm Exam**	|
 | 7 Mar		| - | Spring Break | Spring Break |
-| 14 Mar	| Ch. 19-20	| TLBs / Performance	| Multi-Level Paging	| Project 4 Due
-| 21 Mar	| Ch. 21-23	| Swapping	| I/O Devices |
-| 28 Mar	| Ch. 35-37 + 44	| HDD/SDD | RAID	| Project 5 Due
-| 4 Apr 	| Ch. 38-39	| File Systems	| File Systems
-| 11 Apr	| Ch. 40-42	| File Systems	| File Systems |
+| 14 Mar	| Ch. 17-19	| Paging Mechanisms | TLBs / Performance	| Project 4 Due
+| 21 Mar	| Ch. 20-22	| Multi-Level Paging | Swapping	|
+| 28 Mar	| Ch. 35-37 + 44	| I/O Devices  | HDD/SDD | Project 5 Due
+| 4 Apr 	| Ch. 38-39	| RAID	| FS Abstraction
+| 11 Apr	| Ch. 40-42	| FS Implementation	| FS Structure |
 | 18 Apr	| Ch. 53-55	| Security | Security | Project 6 Due
 | 2 May		| -	| Final Exam 10:30 |
 
