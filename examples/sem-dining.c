@@ -12,15 +12,12 @@
 
 sem_t forks[NFORKS];
 
-int sleeptime = 1000; /* microseconds */
+int sleeptime = 10000000; /* microseconds */
 
 void pickup( int id )
 {
-  int left = id - 1;
-  if(left<0) left = NFORKS-1;
-
-  int right = id + 1;
-  if(right>=NFORKS) right = 0;
+  int left = id;
+  int right = (id + 1) % NFORKS;
 	
   printf("thread %d grabbing fork %d\n",id,left);
   sem_wait(&forks[left]);
@@ -31,12 +28,9 @@ void pickup( int id )
 
 void putdown( int id )
 {
-  int left = id - 1;
-  if(left<0) left = NFORKS-1;
-
-  int right = id + 1;
-  if(right>=NFORKS) right = 0;
-
+  int left = id;
+  int right = (id + 1) % NFORKS;
+	
   printf("thread %d releasing fork %d\n",id,left);
   sem_post(&forks[left]);
 
