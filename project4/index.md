@@ -27,17 +27,21 @@ input in the form of G-Code, a sequence of three dimensional drawing
 instructions that looks like this:
 
 ```
-G00 X5 Y5
-G01 X0 Y20
-G01 X20 Y0
-G02 X10 Y-10 I0 J-10
-G02 X-4 Y-8 I-10 J0
-G01 X-26 Y-2
+G00 X246.00 Y250.00
+G02 X254.00 Y250.00 I250.00 J250.00
+G02 X246.00 Y250.00 I250.00 J250.00
+G01 X262.75 Y250.00
+G01 X262.75 Y472.63
+G00 X258.75 Y472.63
+. . .
 ```
 
 Briefly, G00 indicates a fast repositioning move, G01 indicates a linear
 movement at a standard feed rate, and G02 indicates a circular arc.  There
 are many more codes, and you can read [more here](https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands).
+The complete sequence of commands draws something like this:
+
+<img width=50% src="circuit.png"/>
 
 So that you don't have to carry around a bunch of printers, we will
 give you a simulator `printsim` that reads simplified G-code and (gradually)
@@ -45,7 +49,7 @@ produces an image on the screen, instead of a printed object.  Of course,
 the printing still takes some time to complete.  Your job is to build
 a scheduler that will keep several printers busy at once.
 
-To begin, download the printer simulator code, build it on the student
+To begin, download the [printer simulator code](src), build it on the student
 machines, and try out the examples given.  Write a simple G-code program
 by hand that draws a shape or logo of some kind, and run it through
 the simulator to get the idea.  You are welcome to examine the simulator,
@@ -76,7 +80,7 @@ The **submit** command defines a new print job, and names the gcode
 file to execute on the printer.  **submit** should return immediately
 and display a unique integer job ID generated internally by your program.
 (Just start at one and count up.)  The job will then run in the background
-when selected by the scheduler.
+when selected by the scheduler.  Each simulated printer will pop open a window and start drawing.
 
 The **list** command lists all of the jobs currently known,
 giving the job id, current state (WAITING, PRINTING, or DONE)
@@ -137,15 +141,14 @@ the queue, displaying status, and so forth.
 Each printer is represented by a thread that works in the background.
 Each thread should select the next job to run (based on the current scheduling
 algorithm), render the print job by running the simulator program
-as a separate process, and then updating the job queue when that process
-is complete.
+as a separate external process, and then updating the job queue when that process is complete.
 
 The tricky part of this assignment is the job queue itself.
 The job queue should be implemented as a **monitor** as discussed
 in class: a data structure that is protected by a **mutex**
-and one or more **condition variable(s)**.  The job queue should
+and a **condition variable**.  The job queue should
 only be accessed by functions that take care to use the mutex
-for mutual exclusion and the condition variable(s) to sleep and wakeup.
+for mutual exclusion and the condition variable to sleep and wakeup.
 
 Generally speaking, the main thread should remain responsive to
 the user by only performing quick actions on the job queue.
