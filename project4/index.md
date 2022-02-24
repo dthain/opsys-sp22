@@ -52,7 +52,7 @@ produces an image on the screen, instead of a printed object.  Of course,
 the printing still takes some time to complete.  Your job is to build
 a scheduler that will keep several printers busy at once.
 
-To begin, download the [printer simulator code](src), build it on the student
+To begin, download the [printer simulator code](http://github.com/dthain/opsys-sp22/project4/src), build it on the student
 machines, and try out the examples given.  Write a simple G-code program
 by hand that draws a shape or logo of some kind, and run it through
 the simulator to get the idea.  You are welcome to examine the simulator,
