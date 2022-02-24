@@ -1,6 +1,9 @@
 ---
+layout: default
 title: Project 4 - 3D Printer Scheduler
 ---
+
+# Project 4 - 3D Printer Scheduler
 
 The goals of this project are:
 - To demonstrate mastery of process and thread management.
@@ -41,7 +44,7 @@ movement at a standard feed rate, and G02 indicates a circular arc.  There
 are many more codes, and you can read [more here](https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands).
 The complete sequence of commands draws something like this:
 
-<img width=50% src="circuit.png"/>
+<img width="50%" src="circuit.png"/>
 
 So that you don't have to carry around a bunch of printers, we will
 give you a simulator `printsim` that reads simplified G-code and (gradually)
@@ -131,7 +134,7 @@ documentation as needed.
 
 Here is the basic architecture you should use:
 
-<img width=100% src=architecture.svg/>
+<img width="100%" src="architecture.svg"/>
 
 The program should consists of several threads: one main thread and several
 printer threads, which interact through a common job queue.
