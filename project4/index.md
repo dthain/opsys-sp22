@@ -39,7 +39,7 @@ G00 X258.75 Y472.63
 . . .
 ```
 
-Briefly, G00 indicates a fast repositioning move, G01 indicates a linear
+Briefly, G00 indicates a fast repositioning move to an X Y position, G01 indicates a linear
 movement at a standard feed rate, and G02 indicates a circular arc.  There
 are many more codes, and you can read [more here](https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands).
 The complete sequence of commands draws something like this:
@@ -48,20 +48,24 @@ The complete sequence of commands draws something like this:
 
 So that you don't have to carry around a bunch of printers, we will
 give you a simulator `printsim` that reads simplified G-code and (gradually)
-produces an image on the screen, instead of a printed object.  Of course,
-the printing still takes some time to complete.  Your job is to build
+produces an image on the screen, instead of a printed object.
+(It pauses a few moments at the end so that you can see the complete output.)
+Of course, the printing still takes some time to complete.  Your job is to build
 a scheduler that will keep several printers busy at once.
 
 To begin, download the [printer simulator code](http://github.com/dthain/opsys-sp22/project4/src), build it on the student
 machines, and try out the examples given.  Write a simple G-code program
 by hand that draws a shape or logo of some kind, and run it through
-the simulator to get the idea.  You are welcome to examine the simulator,
-but you won't need to change it for this assignment. 
+the simulator to get the idea.  Call this file `student.gcode` and
+keep it so you can turn it in later.
+
+(You are welcome to examine the simulator code,
+but you won't need to change it for this assignment.)
 
 The Printer Scheduler
 ---------------------
 
-You will build a program called **printsched** for managing
+Your goal is to build a program called **printsched** for managing
 multiple 3D printers.  When started, it should accept a fixed
 number of printers to simulate as a command line argument.
 Then, it should print out a prompt and wait for input from the user.
@@ -86,8 +90,8 @@ and display a unique integer job ID generated internally by your program.
 when selected by the scheduler.  Each simulated printer will pop open a window and start drawing.
 
 The **list** command lists all of the jobs currently known,
-giving the job id, current state (WAITING, PRINTING, or DONE)
-filename, and times at which the job was submitted, started to print, and was done.  It should also state the average turnaround time and average response
+giving the job id, current state (WAITING, PRINTING, or DONE) and filename.
+It should also state the average turnaround time and average response
 time of all jobs in the DONE state.
 You can format this output in any way that is consistent and easy to read.
 
@@ -200,7 +204,7 @@ Please review the [general instructions](../general) for assignments.
 Turn in the following:
 
 - All of your source code for `printsched` and `printsim`.
-- A Makefile that builds `printsched` and `printsim` when the user types `make`, and cleans up all intermediate files on `make clean`.
+- A Makefile that builds `printsched` and `printsim` when the user types `make`, and cleans up all executables and object files on `make clean`.
 - A gcode program of your own creation, called `example.gcode`
 
 This assignment is due at **5:00PM on Friday, March 25th**
