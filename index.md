@@ -59,13 +59,13 @@ title: CSE 30341 - Operating Systems Principles
 | 21 Feb	| Ch. 13-16	| Deadlock	| Memory Overview	| [Homework B Due](homework-sync)
 | 28 Feb	| --	      | Segmentation | [Midterm Exam](midterm)	|
 | 7 Mar		| - | Spring Break | Spring Break |
-| 14 Mar	| Ch. 17-19	| Paging Mechanisms | TLBs / Performance	| [Project 4 Due](project4)
-| 21 Mar	| Ch. 20-22	| Multi-Level Paging | Swapping	|
-| 28 Mar	| Ch. 35-37 + 44	| I/O Devices  | HDD/SDD | Project 5 Due
-| 4 Apr 	| Ch. 38-39	| RAID	| FS Abstraction
+| 14 Mar	| Ch. 17-19	| Paging Mechanisms | TLBs / Performance	| 
+| 21 Mar	| Ch. 20-22	| Multi-Level Paging | Swapping	| [Project 4 Due](project4)
+| 28 Mar	| Ch. 35-37 + 44	| I/O Devices  | HDD/SDD | 
+| 4 Apr 	| Ch. 38-39	| RAID	| FS Abstraction | Project 5 Due
 | 11 Apr	| Ch. 40-42	| FS Implementation	| FS Structure |
-| 18 Apr	| Ch. 53-55	| Security | Security | Project 6 Due
-| 25 Apr  | - | No Class
+| 18 Apr	| Ch. 53-55	| Security | Security |
+| 25 Apr        | - | Project 6 Due | No Class
 | 2 May		| -	| Final Exam Monday 10:30 |
 
 
