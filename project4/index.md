@@ -53,7 +53,7 @@ produces an image on the screen, instead of a printed object.
 Of course, the printing still takes some time to complete.  Your job is to build
 a scheduler that will keep several printers busy at once.
 
-To begin, download the [printer simulator code](http://github.com/dthain/opsys-sp22/project4/src), build it on the student
+To begin, download the [printer simulator code](http://github.com/dthain/opsys-sp22/tree/main/project4/src), build it on the student
 machines, and try out the examples given.  Write a simple G-code program
 by hand that draws a shape or logo of some kind, and run it through
 the simulator to get the idea.  Call this file `student.gcode` and
@@ -173,7 +173,7 @@ for the jobs that actually run.  Try running with different numbers
 of printers, and check that all are kept appropriately busy.
 Think critically about unexpected
 events, such as improper input from the user, incorrect arguments to
-commands, and so forth.  Whenever such an unexpected even occurs,
+commands, and so forth.  Whenever such an unexpected event occurs,
 you should display a detailed and helpful error message, and
 (where possible) continue operation of the program.
 
@@ -182,7 +182,7 @@ that contain a sequence of operations, for example create `test1.txt`
 containing this:
 
 ```
-submit panel.gcode
+submit student.gcode
 list
 wait 1
 list
@@ -203,9 +203,9 @@ Please review the [general instructions](../general) for assignments.
 
 Turn in the following:
 
+- A gcode program of your own creation, called `student.gcode`
 - All of your source code for `printsched` and `printsim`.
 - A Makefile that builds `printsched` and `printsim` when the user types `make`, and cleans up all executables and object files on `make clean`.
-- A gcode program of your own creation, called `example.gcode`
 
 This assignment is due at **5:00PM on Friday, March 25th**
 To submit your files, make a directory called `project4` in
