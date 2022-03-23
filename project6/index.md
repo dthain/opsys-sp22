@@ -50,7 +50,7 @@ itself, and the emulated disk.  Your job is to implement the middle
 component: the filesystem.  The following figure shows how
 the components relate to each other:
 
-![](overview.png)
+![](images/overview.png)
 
 At the top level a user gives typed commands to a shell, instructing
 it to format or mount a disk, and to copy data in and out of the filesystem.
@@ -80,13 +80,13 @@ The remaining blocks in the filesystem are used as plain data
 blocks, and occasionally as indirect pointer blocks.
 Here is a picture of a very small SimpleFS image:
 
-![](fs.png)
+![](images/fs.png)
 
 Let's examine each of these types of blocks in detail.
 
 The superblock describes the layout of the rest of the filesystem:
 
-![](super.png)
+![](images/super.png)
 
 Each field of the superblock is a 4-byte (32-bit) integer.
 The first field is always the "magic" number FS_MAGIC (0xf0f03410)
@@ -109,7 +109,7 @@ small: only 16 bytes.  The remainder of disk block zero is left unusued.
 
 Each inode looks like this:
 
-![](inode.png)
+![](images/inode.png)
 
 Each field of the inode is a 4-byte (32-bit) integer.
 The **isvalid** field is one if the inode is valid (i.e. has been created)
