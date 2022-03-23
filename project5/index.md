@@ -20,7 +20,7 @@ modern virtual machines, so you will be learning an
 advanced technique without having the headache of writing kernel-level code.
 The following figure gives an overview of the components:
 
-<a href=vm1.gif><img border=0 src=vm1.gif width=512></a>
+![](vm1.gif)
 
 We will provide you with code that implements a "virtual" page table and a "virtual" disk.
 The virtual page table will create a small virtual and physical memory, along with
@@ -37,7 +37,7 @@ and draws conclusions about the behavior of each algorithm.
 
 ## Getting Started
 
-Begin by downloading the (source code)[http://github.com/dthain/opsys-sp22/project5/src] and building it.
+Begin by downloading the [source code](http://github.com/dthain/opsys-sp22/project5/src) and building it.
 Look through `main.c` and notice that the program simply creates
 a virtual disk and page table, and then attempts to run one of our three "programs"
 using the virtual memory.  Because no mapping has been made between virtual and
@@ -80,14 +80,14 @@ adjusts the page table to map page 2 to frame 3, with read permissions.
 Then, it loads page 2 from disk into page 3.  When the page fault handler
 completes, the read operation is re-attempted, and succeeds.
 
-<a href=vm2.gif><img border=0 src=vm2.gif width=512></a>
+![](vm2.gif)
 
 The application continues to run, reading various pages.  Suppose that
 it reads pages 3, 5, 6, and 7, each of which result in a page fault,
 and must be loaded into memory as before.  Now physical memory
 is fully in use.
 
-<a href=vm3.gif><img border=0 src=vm3.gif width=512></a>
+![](vm3.gif)
 
 Now suppose that the application attempts to write to page 5.
 Because this page only has the R bit set, a page fault will result.
@@ -96,7 +96,7 @@ seeing that it already has the PROT_READ bit set, adds the PROT_WRITE bit.
 The page fault handler returns, and the application can continue.
 Page 5, frame 1 is modified.
 
-<a href=vm4.gif><img border=0 src=vm4.gif width=512></a>
+![](vm4.gif)
 
 Now suppose that the application reads page 1.  Page 1 is not currently
 paged into physical memory.  The page fault handler must decide which frame
@@ -105,11 +105,11 @@ to remove.  Suppose that it picks page 5, frame 0 at random.  Because page
 handler writes page 5 back to the disk, and reads page 1 in its place.
 Two entries in the page table are updated to reflect the new situation.
 
-<a href=vm5.gif><img border=0 src=vm5.gif width=512></a>
+![](vm5.gif)
 
 ## Essential Requirements
 
-Please review the (general instructions)[../general] for assignments.
+Please review the [general instructions](../general) for assignments.
 
 The program must be invoked as follows:
 
