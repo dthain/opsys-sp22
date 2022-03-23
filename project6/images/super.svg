@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="8cm" height="3cm" viewBox="67 158 152 55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" x="117.475" y="174.625" width="44.45" height="9.525"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" x="117.475" y="184.15" width="44.45" height="9.525"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" x="117.475" y="193.675" width="44.45" height="9.525"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" x="117.475" y="203.2" width="44.45" height="9.525"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="177.8,177.8 167.322,177.8 "/>
+    <polygon style="fill: #000000" points="167.322,176.53 162.242,177.8 167.322,179.07 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="167.322,176.53 162.242,177.8 167.322,179.07 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="107.95,174.625 101.6,174.625 101.6,212.725 107.95,212.725 "/>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="139.7" y="190.5">
+    <tspan x="139.7" y="190.5">nblocks</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="139.7" y="200.025">
+    <tspan x="139.7" y="200.025">ninodeblocks</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="139.7" y="209.55">
+    <tspan x="139.7" y="209.55">ninodes</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="139.7" y="180.975">
+    <tspan x="139.7" y="180.975">magic</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="139.7" y="165.1">
+    <tspan x="139.7" y="165.1">Superblock</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="200.025" y="184.15">
+    <tspan x="200.025" y="184.15">0xf0f03410</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="200.025" y="174.625">
+    <tspan x="200.025" y="174.625">FS_MAGIC</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="82.55" y="193.675">
+    <tspan x="82.55" y="193.675">16 bytes</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="82.55" y="203.2">
+    <tspan x="82.55" y="203.2">total</tspan>
+  </text>
+</svg>

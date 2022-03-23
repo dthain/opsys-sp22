@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="9cm" height="10cm" viewBox="8 13 163 182" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke-linejoin: round; stroke: #000000" x="13.6" y="79.8" width="101.6" height="25.4" rx="4.445" ry="4.445"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="64.4,105.2 64.4,115.678 "/>
+    <polygon style="fill: #000000" points="63.13,115.678 64.4,120.757 65.67,115.678 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="63.13,115.678 64.4,120.757 65.67,115.678 "/>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke-linejoin: round; stroke: #000000" x="13.6" y="38.525" width="127" height="25.4" rx="4.445" ry="4.445"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="64.4,63.925 64.4,74.4025 "/>
+    <polygon style="fill: #000000" points="63.13,74.4025 64.4,79.4825 65.67,74.4025 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="63.13,74.4025 64.4,79.4825 65.67,74.4025 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="131.075,63.925 131.075,112.502 "/>
+    <polygon style="fill: #000000" points="129.805,112.502 131.075,117.582 132.345,112.502 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="129.805,112.502 131.075,117.582 132.345,112.502 "/>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke-linejoin: round; stroke: #000000" x="13.6" y="121.075" width="127" height="25.4" rx="4.445" ry="4.445"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="64.4,146.475 64.4,156.952 "/>
+    <polygon style="fill: #000000" points="63.13,156.953 64.4,162.032 65.67,156.953 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="63.13,156.953 64.4,162.032 65.67,156.953 "/>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" x="48.525" y="162.35" width="31.75" height="31.75"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="64.4,22.65 64.4,33.1275 "/>
+    <polygon style="fill: #000000" points="63.13,33.1275 64.4,38.2075 65.67,33.1275 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="63.13,33.1275 64.4,38.2075 65.67,33.1275 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="101.2">
+    <tspan x="64.4" y="101.2">(fs.c)</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="130.6">
+    <tspan x="64.4" y="130.6">Disk Emulator</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="42.175" y="73.45">
+    <tspan x="42.175" y="73.45">fs_read</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="86.625" y="73.45">
+    <tspan x="86.625" y="73.45">fs_write</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="42.175" y="114.725">
+    <tspan x="42.175" y="114.725">disk_read</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="89.8" y="114.725">
+    <tspan x="89.8" y="114.725">disk_write</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="153.3" y="86.15">
+    <tspan x="153.3" y="86.15">disk_init</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="153.3" y="95.675">
+    <tspan x="153.3" y="95.675">disk_close</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="48.05">
+    <tspan x="64.4" y="48.05">Shell Program</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="60.75">
+    <tspan x="64.4" y="60.75">(shell.c)</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="171.875">
+    <tspan x="64.4" y="171.875">Disk</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="178.225">
+    <tspan x="64.4" y="178.225">Image</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="65.4" y="188.1">
+    <tspan x="65.4" y="188.1">File</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="19.475">
+    <tspan x="64.4" y="19.475">User-Visible Commands</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="96.15" y="32.175">
+    <tspan x="96.15" y="32.175">copyin  copyout</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="42.175" y="35.35">
+    <tspan x="42.175" y="35.35">  </tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="32.65" y="32.175">
+    <tspan x="32.65" y="32.175">format  mount</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="92.5">
+    <tspan x="64.4" y="92.5">FS341 Filesystem</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="64.4" y="143.3">
+    <tspan x="64.4" y="143.3">(disk.c)</tspan>
+  </text>
+</svg>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="12cm" height="3cm" viewBox="45 18 227 56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.27; stroke: #000000" x="45.8" y="31.2" width="34.925" height="31.75"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="109.3,31.2 109.3,62.95 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="90.25,31.2 90.25,62.95 "/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.27; stroke: #000000" x="80.725" y="31.2" width="38.1" height="31.75"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.27; stroke: #000000" x="118.825" y="31.2" width="38.1" height="31.75"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.27; stroke: #000000" x="156.925" y="31.2" width="38.1" height="31.75"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.27; stroke: #000000" x="195.025" y="31.2" width="38.1" height="31.75"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.27; stroke: #000000" x="233.125" y="31.2" width="38.1" height="31.75"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="137.875,31.2 137.875,62.95 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="128.35,31.2 128.35,62.95 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="147.4,31.2 147.4,62.95 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.635; stroke: #000000" points="99.775,31.2 99.775,62.95 "/>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="61.675" y="43.9">
+    <tspan x="61.675" y="43.9">super</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="61.675" y="53.425">
+    <tspan x="61.675" y="53.425">block</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="61.675" y="72.475">
+    <tspan x="61.675" y="72.475">0</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="99.775" y="72.475">
+    <tspan x="99.775" y="72.475">1</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="137.875" y="72.475">
+    <tspan x="137.875" y="72.475">2</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="175.975" y="72.475">
+    <tspan x="175.975" y="72.475">3</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="214.075" y="72.475">
+    <tspan x="214.075" y="72.475">4</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="252.175" y="72.475">
+    <tspan x="252.175" y="72.475">5</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="175.975" y="43.9">
+    <tspan x="175.975" y="43.9">data</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="175.975" y="53.425">
+    <tspan x="175.975" y="53.425">block</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="214.075" y="43.9">
+    <tspan x="214.075" y="43.9">data</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="214.075" y="53.425">
+    <tspan x="214.075" y="53.425">block</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="252.175" y="43.9">
+    <tspan x="252.175" y="43.9">data</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="252.175" y="53.425">
+    <tspan x="252.175" y="53.425">block</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="118.825" y="24.85">
+    <tspan x="118.825" y="24.85">inode blocks</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="87.075" y="50.25">
+    <tspan x="87.075" y="50.25">0</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="96.6" y="50.25">
+    <tspan x="96.6" y="50.25">1</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="106.125" y="50.25">
+    <tspan x="106.125" y="50.25">2</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="115.65" y="50.25">
+    <tspan x="115.65" y="50.25">3</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="125.175" y="50.25">
+    <tspan x="125.175" y="50.25">4</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="134.7" y="50.25">
+    <tspan x="134.7" y="50.25">5</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="144.225" y="50.25">
+    <tspan x="144.225" y="50.25">6</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:middle;font-size:6.77333;font-family:serif;font-style:normal;font-weight:normal" x="153.75" y="50.25">
+    <tspan x="153.75" y="50.25">7</tspan>
+  </text>
+</svg>
