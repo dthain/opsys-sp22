@@ -6,10 +6,9 @@ title: Project 5: Virtual Memory
 # Project 5: Virtual Memory
 
 The goals of this project are:
-- to demonstrate mastery of virtual memory concept.
+- to demonstrate mastery of the virtual memory concept.
 - to learn the code mechanics of operating system fault handlers.
 - to develop skills in quantitative system evaluation.
-- to gain further experience in writing short technical reports.
 
 ## Project Overview
 
@@ -35,9 +34,9 @@ several page replacement algorithms on a selection of simple programs across a r
 You will write a short lab report that explains the experiments, describes your results,
 and draws conclusions about the behavior of each algorithm.
 
-## Getting Started
+## Getting Started 
 
-Begin by downloading the [source code](http://github.com/dthain/opsys-sp22/project5/src) and building it.
+Begin by downloading the [source code](http://github.com/dthain/opsys-sp22/tree/main/project5/src) and building it.
 Look through `main.c` and notice that the program simply creates
 a virtual disk and page table, and then attempts to run one of our three "programs"
 using the virtual memory.  Because no mapping has been made between virtual and
@@ -51,7 +50,7 @@ page fault on page #0
 The program exits because the page fault handler isn't written yet.  That is your job!
 
 Try this as a getting started exercise.  If you run the program with an equal number of
-pages and frames, then we don't actually need a disk.  Instead, you can simply make
+pages and frames, then you don't actually need a disk.  Instead, you can simply make
 page N map directly to frame N, and do nothing else.  So, modify the page fault handler
 to do exactly that:
 
@@ -161,7 +160,6 @@ That will make it easy to find a free frame for replacement.
 
 In a real operating system, the contents of a page should initially be all zeroes.  As it turns out, it does not matter for this project, since each program fills in each page with its own data before attempting to read it.
 
-
 - **Why does my program get stuck in an infinite loop when there is only one page of physical memory?**
 
 It is possible for an instruction to touch more than one page of memory.
@@ -169,6 +167,23 @@ For example, `MOV a, b` could touch three pages of memory if `a` and `b`
 are in different pages, and the executable instruction is in a third page.
 If there is only one page of physical memory, you will get an endless number of page faults
 as you switch between the desired pages.  Just start your testing at a minimum of three pages.
+
+- *What does the result of each program mean?*
+
+Each of the test programs computes a result so that you can tell if it is working correctly, typically by just summing
+the contents of the address space.  For a given number of virtual pages, the number should remain the same, no matter
+how many physical frames are used, or what the page replacement algorithm is.  (However, if the number of pages changes,
+the result will change.)  You can determine the correct result simply by using the one-line trivial page-fault handler
+given above.
+
+Here are some sample results, just to check your initial work:
+
+program | pages | result
+------------------------
+alpha | 10 |5222400
+beta  | 10 |5232896
+gamma | 10 |2220835000
+delta | 10 |5201920
 
 
 ## Turning In
@@ -186,5 +201,5 @@ Your grade on this assignment will be based on the following:
 - Correct implementation of demand paging with any arbitrary access pattern and amount of virtual and physical memory.  (50%)
 - A lab report which is clearly written using correct English, contains an appropriate description of your experiments, contains correct results that are clearly presented, and draws appropriate conclusions. (30%) 
 - Thorough attention to and handling of all possible error conditions, including user error. (10%) 
-- Good coding style, including clear formatting, sensible variable names, and useful comments. (10%) 
+ - Good coding style, including clear formatting, sensible variable names, and useful comments. (10%) 
 

@@ -62,7 +62,7 @@ title: CSE 30341 - Operating Systems Principles
 | 14 Mar	| Ch. 17-19	| Paging Mechanisms | TLBs / Performance	| 
 | 21 Mar	| Ch. 20-22	| Multi-Level Paging | Swapping	| [Project 4 Due](project4)
 | 28 Mar	| Ch. 35-37 + 44	| I/O Devices  | HDD/SDD | 
-| 4 Apr 	| Ch. 38-39	| RAID	| FS Abstraction | Project 5 Due
+| 4 Apr 	| Ch. 38-39	| RAID	| FS Abstraction | [Project 5 Due](project5)
 | 11 Apr	| Ch. 40-42	| FS Implementation	| FS Structure |
 | 18 Apr	| Ch. 53-55	| Security | Security |
 | 25 Apr        | - | No Class | No Class | Project 6 Due **Tuesday**

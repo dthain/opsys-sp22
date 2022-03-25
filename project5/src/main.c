@@ -18,7 +18,7 @@ how to use the page table and disk interfaces.
 void page_fault_handler( struct page_table *pt, int page )
 {
 	printf("page fault on page #%d\n",page);
-	exit(1);
+	page_table_set_entry(pt,page,page,PROT_READ|PROT_WRITE);
 }
 
 int main( int argc, char *argv[] )
