@@ -3,6 +3,8 @@ Do not modify this file.
 Make all of your changes to main.c instead.
 */
 
+#define _XOPEN_SOURCE 500L
+
 #include "disk.h"
 
 #include <unistd.h>
@@ -47,28 +49,28 @@ struct disk * disk_open( const char *diskname, int nblocks )
 	return d;
 }
 
-void disk_write( struct disk *d, int block, const char *data )
+void disk_write( struct disk *d, int block, const unsigned char *data )
 {
 	if(block<0 || block>=d->nblocks) {
 		fprintf(stderr,"disk_write: invalid block #%d\n",block);
 		abort();
 	}
 
-	int actual = pwrite(d->fd,data,d->block_size,block*d->block_size);
+	int actual = pwrite(d->fd,(char*)data,d->block_size,block*d->block_size);
 	if(actual!=d->block_size) {
 		fprintf(stderr,"disk_write: failed to write block #%d: %s\n",block,strerror(errno));
 		abort();
 	}
 }
 
-void disk_read( struct disk *d, int block, char *data )
+void disk_read( struct disk *d, int block, unsigned char *data )
 {
 	if(block<0 || block>=d->nblocks) {
 		fprintf(stderr,"disk_read: invalid block #%d\n",block);
 		abort();
 	}
 
-	int actual = pread(d->fd,data,d->block_size,block*d->block_size);
+	int actual = pread(d->fd,(char*)data,d->block_size,block*d->block_size);
 	if(actual!=d->block_size) {
 		fprintf(stderr,"disk_read: failed to read block #%d: %s\n",block,strerror(errno));
 		abort();
