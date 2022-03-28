@@ -178,14 +178,14 @@ given above.
 
 Here are some sample results, just to check your initial work:
 
---------|-------|---------
+
 program | pages | result
 ------|----|--------------
 alpha | 10 |5222400
 beta  | 10 |5232896
 gamma | 10 |2220835000
 delta | 10 |5201920
-------|-----|-------------
+
 
 
 ## Turning In
