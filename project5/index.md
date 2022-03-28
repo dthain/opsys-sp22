@@ -168,7 +168,7 @@ are in different pages, and the executable instruction is in a third page.
 If there is only one page of physical memory, you will get an endless number of page faults
 as you switch between the desired pages.  Just start your testing at a minimum of three pages.
 
-- *What does the result of each program mean?*
+- **What does the result of each program mean?**
 
 Each of the test programs computes a result so that you can tell if it is working correctly, typically by just summing
 the contents of the address space.  For a given number of virtual pages, the number should remain the same, no matter
@@ -178,12 +178,14 @@ given above.
 
 Here are some sample results, just to check your initial work:
 
+--------|-------|---------
 program | pages | result
-------------------------
+------|----|--------------
 alpha | 10 |5222400
 beta  | 10 |5232896
 gamma | 10 |2220835000
 delta | 10 |5201920
+------|-----|-------------
 
 
 ## Turning In
