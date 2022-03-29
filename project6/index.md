@@ -50,7 +50,7 @@ itself, and the emulated disk.  Your job is to implement the middle
 component: the filesystem.  The following figure shows how
 the components relate to each other:
 
-![](images/overview.png)
+![](images/simplefs-overview.png)
 
 At the top level a user gives typed commands to a shell, instructing
 it to format or mount a disk, and to copy data in and out of the filesystem.
@@ -80,13 +80,13 @@ The remaining blocks in the filesystem are used as plain data
 blocks, and occasionally as indirect pointer blocks.
 Here is a picture of a very small SimpleFS image:
 
-![](images/fs.png)
+![](images/simplefs-filesystem.png)
 
 Let's examine each of these types of blocks in detail.
 
 The superblock describes the layout of the rest of the filesystem:
 
-![](images/super.png)
+![](images/simplefs-superblock.png)
 
 Each field of the superblock is a 4-byte (32-bit) integer.
 The first field is always the "magic" number FS_MAGIC (0xf0f03410)
@@ -109,12 +109,14 @@ small: only 16 bytes.  The remainder of disk block zero is left unusued.
 
 Each inode looks like this:
 
-![](images/inode.png)
+![](images/simplefs-inode.png)
 
-Each field of the inode is a 4-byte (32-bit) integer.
+Most fields of the inode are 4-byte (32-bit) integers.
 The **isvalid** field is one if the inode is valid (i.e. has been created)
 and is zero otherwise.  The **size** field contains the logical size of the
-inode data in bytes.  There are 5 direct pointers to data blocks, and one pointer
+inode data in bytes.  The **ctime** field is a 64-bit integer indicating
+the Unix time (man time(3)) that the file was created.
+  There are 3 direct pointers to data blocks, and one pointer
 to an indirect data block.  In this context, "pointer" simply means the number
 of a block where data may be found.  A value of zero may be used to indicate
 a null block pointer.  Each inode occupies 32 bytes, so there
@@ -179,16 +181,16 @@ block sizes.
 
 The interface to the simulated disk is given in `disk.h`:
 ```
-#define DISK_BLOCK_SIZE 4096
+#define BLOCK_SIZE 4096
 
-int  disk_init( const char *filename, int nblocks );
-int  disk_size();
-void disk_read( int blocknum, char *data );
-void disk_write( int blocknum, const char *data );
-void disk_close();
+struct disk * disk_open( const char *filename, int nblocks );
+int  disk_nblocks( struct disk *d );
+void disk_read( struct disk *d, int blocknum, unsigned char *data );
+void disk_write( struct disk *d, int blocknum, const unsigned char *data );
+void disk_close( struct disk *d );
 ```
 
-Before performing any sort of operation on the disk, you must call **disk_init**
+Before performing any sort of operation on the disk, you must call **disk_open**
 and specify a (real) disk image for storing the disk data, and the number of blocks
 in the simulated disk.   If this function is called on a disk image that already exists,
 the contained data will not be changed.
@@ -196,11 +198,11 @@ When you are done using the disk, call **disk_close**
 to release the file.  These two calls are already made for you in the shell, so you
 should not have to change them.
 
-Once the disk is initialized, you may call **disk_size()** to discover the number
+Once the disk is initialized, you may call **disk_nblocks()** to discover the number
 of blocks on the disk.  As the names suggest, **disk_read()** and
 **disk_write()** read and write one block of data on the disk.  Notice that the
-first argument is a block number, so a call to **disk_read(0,data)** reads the
-first 4KB of data on the disk, and **disk_read(1,data)** reads the next 4KB block
+first argument is a block number, so a call to **disk_read(d,0,data)** reads the
+first 4KB of data on the disk, and **disk_read(d,1,data)** reads the next 4KB block
 of data on the disk.  Every time that you invoke a read or a write, you must ensure
 that **data** points to a full 4KB of memory.
 
@@ -273,10 +275,10 @@ We have provided for you a simple shell that will be used to exercise your files
 and the simulated disk.  When grading your work, we will use the shell to test your
 code, so be sure to test extensively.
 To use the shell, simply run `simplefs` with the name of a disk image,
-and the number of blocks in that image.  For example, to use the `image.5`
+and the number of blocks in that image.  For example, to use the `image.10`
 example given below, run:
 ```
-% ./simplefs image.5 5
+% ./simplefs image.10 10
 ```
 Or, to start with a fresh new disk image, just give a new filename and number of blocks:
 ```
@@ -329,9 +331,9 @@ in each image.  Each image contains some familiar files
 and documents.  Once you are able to read what is on
 these images, you should move on to writing and changing them.
 
-- [image.5](image.5)
-- [image.20](image.20)
-- [image.200](image.200)
+- [image.10](images/image.10)
+- [image.25](images/image.25)
+- [image.100](images/image.100)
 
 As provided, `shell` and `disk` are fully implemented,
 and `fs` is a skeleton awaiting your work.  We have provided
@@ -361,9 +363,9 @@ Most of these should be self explanatory:
 
 ```
 #define DISK_BLOCK_SIZE    4096
-#define FS_MAGIC           0xf0f03410
+#define FS_MAGIC           0x30341003
 #define INODES_PER_BLOCK   128
-#define POINTERS_PER_INODE 5
+#define POINTERS_PER_INODE 3 
 #define POINTERS_PER_BLOCK 1024
 ```
 
