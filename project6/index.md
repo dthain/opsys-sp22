@@ -324,17 +324,13 @@ Note that these three commands work by making a large number of calls to
 
 ## Getting Started
 
-Download the [source code](http://github.com/dthain/opsys-sp22/tree/main/project6) and build it with `make`.
+Download the [source code](http://github.com/dthain/opsys-sp22/tree/main/project6/src) and build it with `make`.
 
-Here are some example disk images to get you started.
-The name of each disk image tells you how many blocks are
+Included with the source are several example disk images to get you started.
+The name of each disk image (image.10, image.25, image.100)tells you how many blocks are
 in each image.  Each image contains some familiar files
 and documents.  Once you are able to read what is on
 these images, you should move on to writing and changing them.
-
-- [image.10](src/image.10)
-- [image.25](src/image.25)
-- [image.100](src/image.100)
 
 As provided, `shell` and `disk` are fully implemented,
 and `fs` is a skeleton awaiting your work.  We have provided
