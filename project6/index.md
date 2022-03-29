@@ -174,7 +174,7 @@ In addition, we will provide you with some sample disk images that you can
 experiment with to test your filesystem.
 
 Just like a real disk, the emulator only allows operations on entire disk blocks
-of 4 KB (DISK_BLOCK_SIZE).  You cannot read or write any smaller unit than than
+of 4 KB (BLOCK_SIZE).  You cannot read or write any smaller unit than than
 that.  The primary challenge of building a filesystem is converting the user's
 requested operations on arbitrary amounts of data into operations on fixed
 block sizes.
@@ -214,8 +214,8 @@ with an error message.  For example, if you attempt to read or write a disk
 block that does not exist, you will get this error message:
 
 ```
-    ERROR: blocknum (592) is too big!
-    Abort (core dumped)
+disk_read: invalid block #592
+Abort (core dumped)
 ```
 
 ## Filesystem Interface
@@ -243,18 +243,19 @@ The various functions must work as follows:
 -  **fs_debug** - Scan a mounted filesystem and report on how the inodes and blocks are organized.  If you can write this function, you have won half the battle!  Once you are able to scan and report upon the file system structures, the rest is easy.  Your output from `fs_debug` should be similar to the following:
 ```
 superblock:
-    magic number is valid
-    1010 blocks on disk
-    101 blocks for inodes
-    12928 inodes total
+    25 blocks
+    3 inode blocks
+    384 inodes
+inode 1:
+    size: 1523 bytes
+    created:  Mon Mar 28 21:49:18 2022
+    direct blocks: 4 
 inode 3:
-    size: 45 bytes
-    direct blocks: 103 194
-inode 5:
-    size 81929 bytes
-    direct blocks: 105 109
-    indirect block: 210
-    indirect data blocks: 211 212 213 214 ...
+    size: 81920 bytes
+    created:  Mon Mar 28 21:49:18 2022
+    direct blocks: 5 6 7 
+    indirect block: 8
+    indirect data blocks: 9 10 11 12 13 14 . . .
 ```
 -  **fs_format** - Creates a new filesystem on the disk, destroying any data already present.  Sets aside ten percent of the blocks for inodes, clears the inode table, and writes the superblock.   Returns one on success, zero otherwise.  Note that formatting a filesystem does **not** cause it to be mounted.  Also, an attempt to format an already-mounted disk should do nothing and return failure.
 -  **fs_mount** - Examine the disk for a filesystem.  If one is present, read the superblock, build a free block bitmap, and prepare the filesystem for use.  Return one on success, zero otherwise.  Note that a successful mount is a pre-requisite for the remaining calls.
@@ -282,7 +283,7 @@ example given below, run:
 ```
 Or, to start with a fresh new disk image, just give a new filename and number of blocks:
 ```
-% ./simplefs mydisk 25
+% ./simplefs mydisk 200
 ```
 Once the shell starts, you can use the `help` command to list the available commands:
 ```
