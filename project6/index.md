@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Project 6: Filesystems
+title: Project 6: SimpleFS
 ---
 
-# Project 6: Filesystem
+# Project 6: SimpleFS
 
 By undertaking this project, you will:
 - learn about the data structures and implementation of a Unix-like filesystem.
@@ -50,7 +50,7 @@ itself, and the emulated disk.  Your job is to implement the middle
 component: the filesystem.  The following figure shows how
 the components relate to each other:
 
-![](images/simplefs-overview.png)
+![](images/simplefs-overall.png)
 
 At the top level a user gives typed commands to a shell, instructing
 it to format or mount a disk, and to copy data in and out of the filesystem.
@@ -80,7 +80,7 @@ The remaining blocks in the filesystem are used as plain data
 blocks, and occasionally as indirect pointer blocks.
 Here is a picture of a very small SimpleFS image:
 
-![](images/simplefs-filesystem.png)
+![](images/simplefs-disk.png)
 
 Let's examine each of these types of blocks in detail.
 
