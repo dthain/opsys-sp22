@@ -10,6 +10,8 @@
 static int do_copyin( const char *filename, int inumber );
 static int do_copyout( int inumber, const char *filename );
 
+struct disk *thedisk = 0;
+
 int main( int argc, char *argv[] )
 {
 	char line[1024];
@@ -23,12 +25,13 @@ int main( int argc, char *argv[] )
 		return 1;
 	}
 
-	if(!disk_init(argv[1],atoi(argv[2]))) {
-		printf("couldn't initialize %s: %s\n",argv[1],strerror(errno));
+	thedisk = disk_open(argv[1],atoi(argv[2]));
+	if(!thedisk) {
+		printf("couldn't open %s: %s\n",argv[1],strerror(errno));
 		return 1;
 	}
 
-	printf("opened emulated disk image %s with %d blocks\n",argv[1],disk_size());
+	printf("opened emulated disk image %s with %d blocks\n",argv[1],disk_nblocks(thedisk));
 
 	while(1) {
 		printf(" simplefs> ");
@@ -162,7 +165,7 @@ int main( int argc, char *argv[] )
 	}
 
 	printf("closing emulated disk.\n");
-	disk_close();
+	disk_close(thedisk);
 
 	return 0;
 }
