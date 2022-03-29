@@ -324,7 +324,7 @@ Note that these three commands work by making a large number of calls to
 
 ## Getting Started
 
-Download the [source code](http://github.com/dthain/opsys-sp22/tree/project6) and build it with `make`.
+Download the [source code](http://github.com/dthain/opsys-sp22/tree/main/project6) and build it with `make`.
 
 Here are some example disk images to get you started.
 The name of each disk image tells you how many blocks are
