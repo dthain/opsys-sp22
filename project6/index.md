@@ -89,7 +89,7 @@ The superblock describes the layout of the rest of the filesystem:
 ![](images/simplefs-superblock.png)
 
 Each field of the superblock is a 4-byte (32-bit) integer.
-The first field is always the "magic" number FS_MAGIC (0xf0f03410)
+The first field is always the "magic" number FS_MAGIC (0x30341003)
 The format routine places this number into the very first bytes
 of the superblock as a sort of filesystem "signature".  When the
 filesystem is mounted, the OS looks for this magic number.
