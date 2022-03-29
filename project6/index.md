@@ -331,9 +331,9 @@ in each image.  Each image contains some familiar files
 and documents.  Once you are able to read what is on
 these images, you should move on to writing and changing them.
 
-- [image.10](images/image.10)
-- [image.25](images/image.25)
-- [image.100](images/image.100)
+- [image.10](src/image.10)
+- [image.25](src/image.25)
+- [image.100](src/image.100)
 
 As provided, `shell` and `disk` are fully implemented,
 and `fs` is a skeleton awaiting your work.  We have provided
@@ -343,10 +343,10 @@ to read and output the superblock:
 
 ```
 % make
-% ./simplefs image.5 5
+% ./simplefs image.10 10
  simplefs> debug
 superblock:
-    5 blocks
+    10 blocks
     1 inode blocks
     128 inodes
 ```
@@ -362,7 +362,7 @@ a number of macros for common constants that you will use.
 Most of these should be self explanatory:
 
 ```
-#define DISK_BLOCK_SIZE    4096
+#define BLOCK_SIZE    4096
 #define FS_MAGIC           0x30341003
 #define INODES_PER_BLOCK   128
 #define POINTERS_PER_INODE 3 
@@ -378,35 +378,36 @@ easily translated from the pictures above:
 
 ```
     struct fs_superblock {
-        int magic;
-        int nblocks;
-        int ninodeblocks;
-        int ninodes;
+        int32_t magic;
+        int32_t nblocks;
+        int32_t ninodeblocks;
+        int32_t ninodes;
     };
 
     struct fs_inode {
-        int isvalid;
-        int size;
-        int direct[POINTERS_PER_INODE];
-        int indirect;
+        int32_t isvalid;
+        int32_t size;
+        int64_t ctime;
+        int32_t direct[POINTERS_PER_INODE];
+        int32_t indirect;
     };
 ```
 Note carefully that many inodes can fit in one disk block.
 A 4KB chunk of memory containing 128 inodes would look like this:
 ```
-    struct fs_inode inodes[128];
+    struct fs_inode inodes[INODES_PER_BLOCK];
 ```
 Each indirect block is just a big array of 1024 integers,
 each pointing to another disk block.  So, a 4KB chunk of memory
 corresponding to an indirect block would look liks this:
 ```
-    int pointers[1024];
+    int32_t pointers[POINTERS_PER_INODE];
 ```
 Finally, each data block is just raw binary data used to store the partial
 contents of a file.  A data block can be specified in C as simply an array
 for 4096 bytes:
 ```
-   char data[4096];
+   unsigned char data[BLOCK_SIZE];
 ```
 
 A raw 4 KB disk block can be used to represent four different kinds of
@@ -426,9 +427,9 @@ the four different ways of interpreting raw disk data:
 ```
 union fs_block {
     struct fs_superblock super;
-    struct fs_inode      inodes[128];
-    int                  pointers[1024];
-    char                 data[4096];
+    struct fs_inode      inodes[INODES_PER_BLOCK];
+    int                  pointers[POINTERS_PER_BLOCK];
+    unsigned char        data[BLOCK_SIZE];
 };
 ```
 Note that the size of an `fs_block` union will be exactly 4KB:
@@ -441,7 +442,7 @@ Now, we may use `disk_read` to load in the raw data from block zero.
 We give `disk_read` the variable `block.data`, which looks
 like an array of characters:
 ```
-    disk_read(0,block.data);
+    disk_read(d,0,block.data);
 ```
 But, we may interpret that data as if it were a `struct superblock` by
 accessing the `super` part of the union.  For example, to extract
@@ -453,7 +454,7 @@ On the other hand, suppose that we wanted to load disk block 59, assume that it
 is an indirect block, and then examine the 4th pointer.
 Again, we would use `disk_read` to load the raw data:
 ```
-    disk_read(59,block.data);
+    disk_read(d,59,block.data);
 ```
 But then use the `pointer` part of the union like so:
 ```
