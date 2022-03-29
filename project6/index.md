@@ -10,7 +10,7 @@ By undertaking this project, you will:
 - learn about filesystem recovery by implementing a free block bitmap scan.
 - develop your expertise in C programming by using structures and unions extensively.
 
-** This project may be done in pairs or singletons.
+**This project may be done in pairs or singletons.
 Please submit your work to a single dropbox with a README
 that indicates the project members.  Both will receive the same grade.**
 
@@ -50,7 +50,7 @@ itself, and the emulated disk.  Your job is to implement the middle
 component: the filesystem.  The following figure shows how
 the components relate to each other:
 
-<img src=images/simplefs-overall.png width=100%/>
+![](images/simplefs-overall.png)
 
 At the top level a user gives typed commands to a shell, instructing
 it to format or mount a disk, and to copy data in and out of the filesystem.
@@ -80,13 +80,13 @@ The remaining blocks in the filesystem are used as plain data
 blocks, and occasionally as indirect pointer blocks.
 Here is a picture of a very small SimpleFS image:
 
-<img src=images/simplefs-disk.png width=100%/>
+![](images/simplefs-disk.png)
 
 Let's examine each of these types of blocks in detail.
 
 The superblock describes the layout of the rest of the filesystem:
 
-<img src=images/simplefs-superblock.png width=25%/>
+![](images/simplefs-superblock.png)
 
 Each field of the superblock is a 4-byte (32-bit) integer.
 The first field is always the "magic" number FS_MAGIC (0x30341003)
@@ -109,7 +109,7 @@ small: only 16 bytes.  The remainder of disk block zero is left unusued.
 
 Each inode looks like this:
 
-<img src=images/simplefs-inode.png width=75%/>
+![](images/simplefs-inode.png)
 
 Most fields of the inode are 4-byte (32-bit) integers.
 The **isvalid** field is one if the inode is valid (i.e. has been created)
@@ -374,37 +374,41 @@ The superblock and inode structures are
 easily translated from the pictures above:
 
 ```
-    struct fs_superblock {
-        int32_t magic;
-        int32_t nblocks;
-        int32_t ninodeblocks;
-        int32_t ninodes;
-    };
+ struct fs_superblock {
+     int32_t magic;
+     int32_t nblocks;
+     int32_t ninodeblocks;
+     int32_t ninodes;
+ };
 
     struct fs_inode {
-        int32_t isvalid;
-        int32_t size;
-        int64_t ctime;
-        int32_t direct[POINTERS_PER_INODE];
-        int32_t indirect;
+     int32_t isvalid;
+     int32_t size;
+     int64_t ctime;
+     int32_t direct[POINTERS_PER_INODE];
+     int32_t indirect;
     };
+
 ```
 Note carefully that many inodes can fit in one disk block.
 A 4KB chunk of memory containing 128 inodes would look like this:
+
 ```
-    struct fs_inode inodes[INODES_PER_BLOCK];
+ struct fs_inode inodes[INODES_PER_BLOCK];
 ```
 Each indirect block is just a big array of 1024 integers,
 each pointing to another disk block.  So, a 4KB chunk of memory
 corresponding to an indirect block would look liks this:
+
 ```
-    int32_t pointers[POINTERS_PER_INODE];
+ int32_t pointers[POINTERS_PER_INODE];
 ```
+
 Finally, each data block is just raw binary data used to store the partial
 contents of a file.  A data block can be specified in C as simply an array
 for 4096 bytes:
 ```
-   unsigned char data[BLOCK_SIZE];
+unsigned char data[BLOCK_SIZE];
 ```
 
 A raw 4 KB disk block can be used to represent four different kinds of
@@ -432,31 +436,41 @@ union fs_block {
 Note that the size of an `fs_block` union will be exactly 4KB:
 the size of the largest members of the union.  To declare a variable
 of type: `union fs_block`:
+
 ```
-    union fs_block block;
+union fs_block block;
 ```
+
 Now, we may use `disk_read` to load in the raw data from block zero.
 We give `disk_read` the variable `block.data`, which looks
 like an array of characters:
+
 ```
-    disk_read(d,0,block.data);
+disk_read(d,0,block.data);
 ```
+
 But, we may interpret that data as if it were a `struct superblock` by
 accessing the `super` part of the union.  For example, to extract
 the magic number of the super block, we might do this:
+
 ```
-    x = block.super.magic;
+x = block.super.magic;
 ```
+
 On the other hand, suppose that we wanted to load disk block 59, assume that it
 is an indirect block, and then examine the 4th pointer.
 Again, we would use `disk_read` to load the raw data:
+
 ```
-    disk_read(d,59,block.data);
+disk_read(d,59,block.data);
 ```
+
 But then use the `pointer` part of the union like so:
+
 ```
-    x = block.pointer[4];
+x = block.pointer[4];
 ```
+
 The union offers a convenient way of viewing the same data from multiple
 perspectives.  When we load data from the disk, it is just a 4 KB raw chunk
 of data (block.data).  But, once loaded, the filesystem layer knows that
@@ -465,7 +479,7 @@ from another perspective by choosing another field in the union. (block.super)
 
 ## General Advice
 
--  **Get Started Early!**  This project is larger and harder than the previous projects. Don't wait until the last minute.
+-  **Get started early!**  This project is larger and harder than the previous projects. Don't wait until the last minute.
 -  **Implement the functions roughly in order.**  We have deliberately presented the functions of the filesystem interface in order to difficulty.  Implement debug, format, and mount first.  Make sure that you are able to access the sample disk images provided.  Then, perform creation and deletion of inodes without worrying about data blocks.  Implement reading and test again with disk images.  If everything else is working, then attempt fs_write.
 -  **Divide and conquer.**  Work hard to factor out common actions into simple functions.  This will dramatically simplify your code.  For example, you will often need to load and save individual inode structures by number.  This involves a fiddly little computation to transform an inumber into a block number, and so forth.  So, make two little functions to do just that:
 ```
@@ -485,7 +499,7 @@ as the end of a file or a full disk.
 
 ## Turning In
 
-This assignment is due at **5PM on April, 26th**.  a Makefile, and a brief
+This assignment is due at **5PM on Tuesday April, 26th**.  a Makefile, and a brief
 README listing your project members to one of your dropboxes.  (It isn't necessary to turn it into both.)
 Please do not turn in executables, disk images, or other files.  As a reminder, your dropbox
 directory is:
