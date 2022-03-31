@@ -61,7 +61,7 @@ title: CSE 30341 - Operating Systems Principles
 | 7 Mar		| - | Spring Break | Spring Break |
 | 14 Mar	| Ch. 17-19	| Paging Mechanisms | TLBs / Performance	| 
 | 21 Mar	| Ch. 20-22	| Multi-Level Paging | Swapping	| [Project 4 Due](project4)
-| 28 Mar	| Ch. 35-37 + 44	| I/O Devices [Ex. Driver](https://github.com/dthain/basekernel/blob/master/kernel/ata.c)  | [HDD Datasheet](https://www.seagate.com/www-content/datasheets/pdfs/desktop-hdd-8tbDS1770-9-1603US-en_US.pdf) | [SSD Datasheet](https://www.micron.com/-/media/client/global/documents/products/data-sheet/ssd/m550_m2_2280_ssd.pdf) | 
+| 28 Mar	| Ch. 35-37 + 44	| I/O Devices / ([Ex. Driver](https://github.com/dthain/basekernel/blob/master/kernel/ata.c))  | [HDD Datasheet](https://www.seagate.com/www-content/datasheets/pdfs/desktop-hdd-8tbDS1770-9-1603US-en_US.pdf) / [SSD Datasheet](https://www.micron.com/-/media/client/global/documents/products/data-sheet/ssd/m550_m2_2280_ssd.pdf) | 
 | 4 Apr 	| Ch. 38-39	| RAID	| FS Abstraction | [Project 5 Due](project5)
 | 11 Apr	| Ch. 40-42	| FS Implementation	| FS Structure |
 | 18 Apr	| Ch. 53-55	| Security | Security |
