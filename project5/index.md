@@ -122,7 +122,7 @@ You may only modify the file `main.c`.  Your job is to implement three page repl
 
 A complete and correct program will run each of the sample programs to completion with only the following output:
 
-- The single line of output from `alpha`, `beta`, `gamma` or `delta`
+- The <strike>single line of</strike> normal output from `alpha`, `beta`, `gamma` or `delta`
 - A summary of the number of page faults, disk reads, and disk writes over the course of the program.
 
 You may certainly add some `printfs` while testing and debugging your program,
