@@ -190,7 +190,7 @@ delta | 10 |5201920
 
 ## Turning In
 
-This assignment is due at <strike>**5PM on Friday, April 8th**</strike> 9AM on Monday, April 11th.  Turn in all of your source code and a Makefile that builds `virtmem` when the user types `make`.  Turn in a lab report named `report.pdf` with the results indicated above.  Please do not turn in executables or other large files.  As a reminder, your dropbox is this directory:
+This assignment is due at <strike>5PM on Friday, April 8th</strike> **9AM on Monday, April 11th**.  Turn in all of your source code and a Makefile that builds `virtmem` when the user types `make`.  Turn in a lab report named `report.pdf` with the results indicated above.  Please do not turn in executables or other large files.  As a reminder, your dropbox is this directory:
 
 ```
 /escnfs/courses/sp22-cse-30341.01/dropbox/YOURNAME/project5
