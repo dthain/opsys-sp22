@@ -293,10 +293,10 @@ Commands are:
     mount
     debug
     create
-    delete  &lt;inode&gt;
-    cat     &lt;inode&gt;
-    copyin  &lt;file&gt; &lt;inode&gt;
-    copyout &lt;inode&gt; &lt;file&gt;
+    delete  <inode>
+    cat     <inode>
+    copyin  <file> <inode>
+    copyout <inode> <file>
     help
     quit
     exit
@@ -344,8 +344,8 @@ to read and output the superblock:
  simplefs> debug
 superblock:
     10 blocks
-    1 inode blocks
-    128 inodes
+    2 inode blocks
+    256 inodes
 ```
 
 ## Implementation Notes
