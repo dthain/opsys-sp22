@@ -332,6 +332,8 @@ in each image.  Each image contains some familiar files
 and documents.  Once you are able to read what is on
 these images, you should move on to writing and changing them.
 
+**Note April 21st: There was a subtle error in the original image.25 and image.100. Basically, the files were too large for the size of the filesystem.  I have updated those two files, and you should download new copies.**
+
 As provided, `shell` and `disk` are fully implemented,
 and `fs` is a skeleton awaiting your work.  We have provided
 the first few lines of `fs_debug` to give you the right idea.
