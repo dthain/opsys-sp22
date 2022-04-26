@@ -66,6 +66,6 @@ title: CSE 30341 - Operating Systems Principles
 | 11 Apr	| Ch. 40-42	| FS Implementation	| FS Structure |
 | 18 Apr	| Ch. 53-55	| Security | Security |
 | 25 Apr        | - | [Project 6 Due](project6) | No Class |
-| 2 May		| -	| [Final Exam Monday 10:30](final) |
+| 2 May		| [Final Exam Monday 10:30](final) | - | - |
 
 
